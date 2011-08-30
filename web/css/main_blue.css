@@ -1,0 +1,192 @@
+body{
+    margin: 0px;
+    font-family: 'Questrial', sans-serif;
+    background-color: #eee;
+}
+
+#header{
+    margin-top: 0px;
+    height: 200px;
+}
+#header-main-content{
+    background-image: url('/images/romina-header.png');
+    background-repeat: repeat-x;
+    display: table;
+    width: 1000px;
+    margin: auto;
+    border: 1px #E4D7C5 solid;
+    height: 200px;
+}
+#shadowBody{
+    margin: auto;
+    display: table;
+    -webkit-box-shadow: 0px 5px 10px rgb(0,0,0);
+    -moz-box-shadow: 0px 5px 10px rgb(0,0,0);
+    box-shadow: 0px 5px 10px rgb(0,0,0);
+}
+.homepage-logo{
+    float: left;
+    width: 15%;
+    height: 145px;
+}
+.homepage-banner{
+    float: left;
+    width: 75%;
+    height: 50px;
+}
+.homepage-banner span{
+    display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: indianred;
+    font-weight: bold;
+    font-family: verdana;
+}
+.homepage-menu{
+    margin-top: 160px;
+    margin-left: 150px;
+    padding: 10px;
+    float: left;
+    width: 500px;
+    height: 20px;
+    line-height: 40px;
+}
+.homepage-menu a{
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 10px;
+    width: 250px;
+    height: 20px;
+    border: 1px solid #C2AB8C;
+    background-color: #3AAACF;
+}
+.homepage-menu a:hover{
+
+    background-color: #06799F;
+    cursor: pointer;
+}
+
+#content{
+    min-height: 579px;
+}
+
+#footer{
+    background-color: #000;
+    height: 200px;
+}
+
+#footer-links{
+    padding-top: 10px;
+    width: 400px;
+    margin: auto;
+}
+#footer-links a{
+    color: #3AAACF;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+#container-left{
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+    width: 15.5%;
+    min-height: 550px;
+}
+#container-center{
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+    min-height: 550px;
+    /*border-left: 1px #6996D3 solid;
+    border-right: 1px #6996D3 solid;*/
+}
+#container-right{
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+    width: 16%;
+    min-height: 550px;
+}
+#main-container{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+#userbar{
+    height: 30px;
+    background-color: #000;
+}
+
+.product{
+    float: left;
+    width: 48%;
+    height: 200px;
+    margin: 5px;
+    font-size: 10px;
+    border: 1px #6996D3 solid;
+}
+.product-description{
+    margin-top: 5px;
+    float: right;
+    width: 52%;
+}
+.product-description a{
+    color: #06799F;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+.product-description p{
+    display: block;
+    font-size: 11px;
+}
+.product-description span{
+    display: block;
+    font-size: 12px;
+}
+.product-image{
+    margin-top: 5px;
+    float: left;
+}
+
+.category-menu{
+    padding-left: 10px;
+    display: block;
+    color: #216278;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    vertical-align: middle;
+}
+.category-menu:hover{
+    color: white;
+    background-color: #61B4CF;
+}
+.category-menu-selected{
+    background-color: #E4D7C5;
+}
+
+div{
+}
+
+.page-description{
+    color: #666;
+    display: block;
+    padding: 10px;
+}
+
+#product-list{
+    margin-top: 20px;
+}
+
+#navigation-bar{
+    margin-left: 160px;
+    padding-top: 30px;
+}

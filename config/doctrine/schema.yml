@@ -1,0 +1,33 @@
+User:
+  columns:
+    username: { type: string(255), notnull: true }
+    password: { type: string(255), notnull: true }
+    user_type_id: { type: integer }
+  relations:
+    UserType: { local: user_type_id, foreign: id }
+
+UserType:
+  columns:
+    name: { type: string(255) }
+
+Product:
+  columns:
+    name: { type: string(255), notnull: true }
+    description: { type: string(500), notnull: true }
+    price: { type: string(500) }
+    image: { type: string(255) }
+    product_category_id: { type: integer }
+  relations:
+    ProductCategory: { local: product_category_id, foreign: id }
+
+ProductCategory:
+  columns:
+    name: { type: string(255), notnull: true }
+    description: { type: string(500) }
+    image: { type: string(255) }
+
+Service:
+  columns:
+    name: { type: string(255), notnull: true }
+    description: { type: string(1000), notnull: true }
+    image: { type: string(255) }
