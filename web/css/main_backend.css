@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+    font-family: 'Questrial', sans-serif;
+}
+
+#header{
+    margin-top: 0px;
+    height: 200px;
+}
+#header-main-content{
+    background-color: #555;
+    display: table;
+    width: 80%;
+    margin: auto;
+    border: 1px #E4D7C5 solid;
+}
+.homepage-logo{
+    float: left;
+    width: 15%;
+    height: 145px;
+}
+.homepage-banner{
+    float: left;
+    width: 75%;
+    height: 50px;
+}
+.homepage-banner span{
+    display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: verdana;
+}
+.homepage-menu{
+    margin-top: 55px;
+    padding: 10px;
+    float: left;
+    width: 500px;
+    height: 20px;
+    line-height: 50px;
+}
+.homepage-menu a{
+    color: #333;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 10px;
+    width: 250px;
+    height: 20px;
+    border: 1px solid #C2AB8C;
+    background-color: #F0B17C;
+}
+.homepage-menu a:hover{
+    
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#content{
+    min-height: 579px;
+}
+
+#footer{
+    background-color: #333;
+    height: 200px;
+}
+
+#container-left{
+    vertical-align: top;
+    display: inline-block;
+    width: 15.5%;
+    min-height: 550px;
+    border: 1px #E4D7C5 solid;
+}
+#container-center{
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+    min-height: 550px;
+    border: 1px #E4D7C5 solid;
+}
+#container-right{
+    vertical-align: top;
+    display: inline-block;
+    width: 17%;
+    min-height: 550px;
+    border: 1px #E4D7C5 solid;
+}
+#main-container{
+    margin: auto;
+    width: 80%;
+}
+
+#userbar{
+    height: 30px;
+    background-color: #333;
+}
+
+.product{
+    float: left;
+    width: 48%;
+    height: 200px;
+    margin: 5px;
+    border: 1px #E4D7C5 solid;
+    font-size: 10px;
+}
+.product-description{
+    margin-top: 5px;
+    float: right;
+    width: 53%;
+}
+.product-description a{
+    
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+.product-description p{
+    display: block;
+    font-size: 11px;
+}
+.product-description span{
+    display: block;
+    font-size: 12px;
+}
+.product-image{
+    margin-top: 5px;
+    float: left;
+}
+
+.category-menu{
+    margin-top: 10px;
+}
+
+.category-menu a{
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin: 10px;
+    vertical-align: middle;
+}
+.category-menu a:hover{
+    color: #d33;
+}
+
+div{
+   
+}
+
+.page-description{
+    color: #666;
+    display: block;
+    padding: 10px;
+}
+
+#product-list{
+    margin-top: 20px;
+}
