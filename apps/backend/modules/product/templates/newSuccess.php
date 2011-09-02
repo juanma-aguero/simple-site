@@ -1,3 +1,3 @@
-<h1>New Product</h1>
+<h2>Nuevo producto</h2>
 
 <?php include_partial('form', array('form' => $form)) ?>

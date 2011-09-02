@@ -11,6 +11,15 @@
 class ProductForm extends BaseProductForm {
 
     public function configure() {
+        
+        $this->getWidgetSchema()->setLabels(array(
+            'product_category_id' => 'Categoria',
+            'name' => 'nombre',
+            'description_short' => 'Descripcion corta',
+            'description_long' => 'Descripcion larga',
+            'price' => 'Precio',
+            'image' => 'Imagen'
+        ));
 
         $this->widgetSchema['image'] = new sfWidgetFormInputFileEditable(array(
                     'file_src' => '/' . basename(sfConfig::get('sf_upload_dir')) . '/' . $this->getObject()->getImage(),

@@ -121,3 +121,17 @@ Sep 01 04:10:57 symfony [info] {sfWebDebugLogger} Action "product/category" 1089
 Sep 01 04:10:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
 Sep 01 04:10:57 symfony [info] {sfWebDebugLogger} View "Success" for "product/category" 32.65 ms (1)
 Sep 01 04:10:57 symfony [info] {sfWebResponse} Send content (37890 o)
+Sep 02 02:31:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /home with parameters array (  'module' => 'home',  'action' => 'index',)
+Sep 02 02:31:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 02 02:31:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 02 02:31:58 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Sep 02 02:31:58 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\frontend\modules/home/templates/indexSuccess.php"
+Sep 02 02:31:58 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\frontend\templates/layout.php"
+Sep 02 02:31:58 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\frontend\templates/layout.php"
+Sep 02 02:31:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 02 02:31:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 02 02:31:58 symfony [info] {sfWebDebugLogger} Configuration 1420.69 ms (9)
+Sep 02 02:31:58 symfony [info] {sfWebDebugLogger} Factories 446.06 ms (1)
+Sep 02 02:31:58 symfony [info] {sfWebDebugLogger} Action "home/index" 0.30 ms (1)
+Sep 02 02:31:58 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 205.84 ms (1)
+Sep 02 02:31:58 symfony [info] {sfWebResponse} Send content (32158 o)

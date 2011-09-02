@@ -16,20 +16,22 @@ abstract class BaseProductForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'                  => new sfWidgetFormInputHidden(),
-      'name'                => new sfWidgetFormInputText(),
-      'description'         => new sfWidgetFormTextarea(),
-      'price'               => new sfWidgetFormTextarea(),
-      'image'               => new sfWidgetFormInputText(),
       'product_category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProductCategory'), 'add_empty' => true)),
+      'name'                => new sfWidgetFormInputText(),
+      'description_short'   => new sfWidgetFormTextarea(),
+      'description_long'    => new sfWidgetFormTextarea(),
+      'price'               => new sfWidgetFormInputText(),
+      'image'               => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'                  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'name'                => new sfValidatorString(array('max_length' => 255)),
-      'description'         => new sfValidatorString(array('max_length' => 500)),
-      'price'               => new sfValidatorString(array('max_length' => 500, 'required' => false)),
-      'image'               => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'product_category_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ProductCategory'), 'required' => false)),
+      'name'                => new sfValidatorString(array('max_length' => 255)),
+      'description_short'   => new sfValidatorString(array('max_length' => 500)),
+      'description_long'    => new sfValidatorString(array('max_length' => 1000)),
+      'price'               => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'image'               => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('product[%s]');

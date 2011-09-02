@@ -1,8 +1,8 @@
 User:
   columns:
+    user_type_id: { type: integer }
     username: { type: string(255), notnull: true }
     password: { type: string(255), notnull: true }
-    user_type_id: { type: integer }
   relations:
     UserType: { local: user_type_id, foreign: id }
 
@@ -12,11 +12,12 @@ UserType:
 
 Product:
   columns:
-    name: { type: string(255), notnull: true }
-    description: { type: string(500), notnull: true }
-    price: { type: string(500) }
-    image: { type: string(255) }
     product_category_id: { type: integer }
+    name: { type: string(255), notnull: true }
+    description_short: { type: string(500), notnull: true }
+    description_long: { type: string(1000), notnull: true }
+    price: { type: string(255) }
+    image: { type: string(255) }
   relations:
     ProductCategory: { local: product_category_id, foreign: id }
 

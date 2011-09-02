@@ -5,7 +5,7 @@
         <?php include_metas() ?>
         <?php include_title() ?>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'></link>
+<!--        <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'></link>-->
         <?php include_stylesheets() ?>
         <?php include_javascripts() ?>
     </head>

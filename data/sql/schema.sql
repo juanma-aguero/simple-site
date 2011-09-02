@@ -1,7 +1,7 @@
 CREATE TABLE item (id BIGINT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, description TEXT NOT NULL, image VARCHAR(255), item_category_id BIGINT, item_type_id BIGINT, INDEX item_category_id_idx (item_category_id), INDEX item_type_id_idx (item_type_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE item_category (id BIGINT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, description TEXT, image VARCHAR(255), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE item_type (id BIGINT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, description TEXT, image VARCHAR(255), PRIMARY KEY(id)) ENGINE = INNODB;
-CREATE TABLE product (id BIGINT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, description TEXT NOT NULL, price TEXT, image VARCHAR(255), product_category_id BIGINT, INDEX product_category_id_idx (product_category_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE product (id BIGINT AUTO_INCREMENT, product_category_id BIGINT, name VARCHAR(255) NOT NULL, description_short TEXT NOT NULL, description_long TEXT NOT NULL, price VARCHAR(255), image VARCHAR(255), INDEX product_category_id_idx (product_category_id), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE product_category (id BIGINT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, description TEXT, image VARCHAR(255), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE service (id BIGINT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, description TEXT NOT NULL, image VARCHAR(255), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE user (id BIGINT AUTO_INCREMENT, username VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, user_type_id BIGINT, INDEX user_type_id_idx (user_type_id), PRIMARY KEY(id)) ENGINE = INNODB;
