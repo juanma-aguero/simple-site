@@ -183,3 +183,20 @@ div{
 .bottom-buttons{
     text-align: center; border-top: 1px #555 solid;
 }
+
+.form-new{
+    width: 550px; 
+    margin: auto;
+}
+.form-new input{
+    border: 1px grey solid;
+}
+.form-new div{
+    margin-top: 5px;
+}
+.form-new label{
+    text-align: right;
+    float: left;
+    width: 200px;
+    vertical-align: top;
+}

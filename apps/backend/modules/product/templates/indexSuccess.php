@@ -21,7 +21,7 @@
             <tr>
                 <th>Categoría</th>
                 <th>Nombre</th>
-                <th>Descripcion</th>
+                <th>Descripcion corta</th>
                 <th>Precio</th>
                 <th></th>
             </tr>
@@ -31,7 +31,7 @@
                 <tr>
                     <td><?php echo $product->getProductCategory() ?></td>
                     <td><?php echo $product->getName() ?></td>
-                    <td><?php echo $product->getDescription() ?></td>
+                    <td><?php echo $product->getDescriptionShort() ?></td>
                     <td><?php echo $product->getPrice() ?></td>
                     <td><a href="<?php echo url_for('product/show?id=' . $product->getId()) ?>">Ver</a></td>
                 </tr>

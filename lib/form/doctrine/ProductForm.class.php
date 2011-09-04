@@ -12,6 +12,7 @@ class ProductForm extends BaseProductForm {
 
     public function configure() {
         
+        // labels
         $this->getWidgetSchema()->setLabels(array(
             'product_category_id' => 'Categoria',
             'name' => 'nombre',
@@ -20,7 +21,11 @@ class ProductForm extends BaseProductForm {
             'price' => 'Precio',
             'image' => 'Imagen'
         ));
+        
+        // adding light rich text editor
+        $this->widgetSchema['description_long']->setAttribute('class', 'rich-text-area');
 
+        // Image setup
         $this->widgetSchema['image'] = new sfWidgetFormInputFileEditable(array(
                     'file_src' => '/' . basename(sfConfig::get('sf_upload_dir')) . '/' . $this->getObject()->getImage(),
                     'is_image' => true,

@@ -501,3 +501,524 @@ Sep 01 05:34:34 symfony [info] {sfWebDebugLogger} Action "product/index" 1071.22
 Sep 01 05:34:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
 Sep 01 05:34:34 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 33.11 ms (1)
 Sep 01 05:34:34 symfony [info] {sfWebResponse} Send content (34310 o)
+Sep 04 03:49:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Sep 04 03:49:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:49:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:49:39 symfony [info] {productActions} Call "productActions->executeCreate()"
+Sep 04 03:49:39 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "product/create".
+Sep 04 03:49:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Sep 04 03:49:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:49:39 symfony [info] {sfWebDebugLogger} Configuration 200.89 ms (9)
+Sep 04 03:49:39 symfony [info] {sfWebDebugLogger} Factories 273.18 ms (1)
+Sep 04 03:49:39 symfony [info] {sfWebDebugLogger} Action "product/create" 78.01 ms (1)
+Sep 04 03:50:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Sep 04 03:50:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:50:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:50:07 symfony [info] {productActions} Call "productActions->executeNew()"
+Sep 04 03:50:07 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/newSuccess.php"
+Sep 04 03:50:07 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:50:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:50:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:50:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Sep 04 03:50:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:50:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:50:18 symfony [info] {productActions} Call "productActions->executeNew()"
+Sep 04 03:50:18 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/newSuccess.php"
+Sep 04 03:50:18 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:50:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:50:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:50:19 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:19 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:50:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:50:19 symfony [info] {sfWebDebugLogger} Configuration 14.53 ms (9)
+Sep 04 03:50:19 symfony [info] {sfWebDebugLogger} Factories 59.33 ms (1)
+Sep 04 03:50:19 symfony [info] {sfWebDebugLogger} Action "product/new" 59.69 ms (1)
+Sep 04 03:50:19 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 1084.51 ms (1)
+Sep 04 03:50:19 symfony [info] {sfWebDebugLogger} Partial "product/_form" 1061.21 ms (1)
+Sep 04 03:50:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 03:50:19 symfony [info] {sfWebResponse} Send content (40731 o)
+Sep 04 03:50:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Sep 04 03:50:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:50:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:50:27 symfony [info] {productActions} Call "productActions->executeCreate()"
+Sep 04 03:50:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:50:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_category p WHERE p.id = ? - (1)
+Sep 04 03:50:28 symfony [info] {productActions} Change template to "CURRENT/new"
+Sep 04 03:50:28 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/newSuccess.php"
+Sep 04 03:50:28 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:50:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:50:28 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:28 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:50:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:50:28 symfony [info] {sfWebDebugLogger} Configuration 13.68 ms (9)
+Sep 04 03:50:28 symfony [info] {sfWebDebugLogger} Factories 59.10 ms (1)
+Sep 04 03:50:28 symfony [info] {sfWebDebugLogger} Action "product/create" 1094.44 ms (1)
+Sep 04 03:50:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Sep 04 03:50:28 symfony [info] {sfWebDebugLogger} View "Success" for "product/create" 60.65 ms (1)
+Sep 04 03:50:28 symfony [info] {sfWebDebugLogger} Partial "product/_form" 24.04 ms (1)
+Sep 04 03:50:28 symfony [info] {sfWebResponse} Send content (43379 o)
+Sep 04 03:50:39 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Sep 04 03:50:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:50:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:50:39 symfony [info] {productActions} Call "productActions->executeIndex()"
+Sep 04 03:50:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:50:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p - ()
+Sep 04 03:50:40 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/indexSuccess.php"
+Sep 04 03:50:40 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:40 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:50:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:50:40 symfony [info] {sfWebDebugLogger} Configuration 12.12 ms (9)
+Sep 04 03:50:40 symfony [info] {sfWebDebugLogger} Factories 53.75 ms (1)
+Sep 04 03:50:40 symfony [info] {sfWebDebugLogger} Action "product/index" 1077.94 ms (1)
+Sep 04 03:50:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 03:50:40 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 23.56 ms (1)
+Sep 04 03:50:40 symfony [info] {sfWebResponse} Send content (34777 o)
+Sep 04 03:50:43 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Sep 04 03:50:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:50:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:50:43 symfony [info] {productActions} Call "productActions->executeNew()"
+Sep 04 03:50:43 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/newSuccess.php"
+Sep 04 03:50:43 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:50:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:50:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:50:44 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:44 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:50:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:50:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:50:44 symfony [info] {sfWebDebugLogger} Configuration 12.90 ms (9)
+Sep 04 03:50:44 symfony [info] {sfWebDebugLogger} Factories 53.84 ms (1)
+Sep 04 03:50:44 symfony [info] {sfWebDebugLogger} Action "product/new" 47.09 ms (1)
+Sep 04 03:50:44 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 1091.81 ms (1)
+Sep 04 03:50:44 symfony [info] {sfWebDebugLogger} Partial "product/_form" 1064.08 ms (1)
+Sep 04 03:50:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Sep 04 03:50:44 symfony [info] {sfWebResponse} Send content (40773 o)
+Sep 04 03:51:00 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Sep 04 03:51:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:51:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:51:00 symfony [info] {productActions} Call "productActions->executeCreate()"
+Sep 04 03:51:00 symfony [info] {productActions} Change template to "CURRENT/new"
+Sep 04 03:51:00 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/newSuccess.php"
+Sep 04 03:51:00 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:51:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:51:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:51:02 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:51:02 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:51:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:51:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:51:02 symfony [info] {sfWebDebugLogger} Configuration 12.35 ms (9)
+Sep 04 03:51:02 symfony [info] {sfWebDebugLogger} Factories 51.29 ms (1)
+Sep 04 03:51:02 symfony [info] {sfWebDebugLogger} Action "product/create" 52.96 ms (1)
+Sep 04 03:51:02 symfony [info] {sfWebDebugLogger} View "Success" for "product/create" 1079.80 ms (1)
+Sep 04 03:51:02 symfony [info] {sfWebDebugLogger} Partial "product/_form" 1055.58 ms (1)
+Sep 04 03:51:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 03:51:02 symfony [info] {sfWebResponse} Send content (42625 o)
+Sep 04 03:51:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Sep 04 03:51:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:51:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:51:18 symfony [info] {productActions} Call "productActions->executeCreate()"
+Sep 04 03:51:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:51:19 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_category p WHERE p.id = ? - (1)
+Sep 04 03:51:19 symfony [info] {productActions} Change template to "CURRENT/new"
+Sep 04 03:51:19 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/newSuccess.php"
+Sep 04 03:51:19 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:51:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:51:19 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:51:19 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:51:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:51:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:51:19 symfony [info] {sfWebDebugLogger} Configuration 11.61 ms (9)
+Sep 04 03:51:19 symfony [info] {sfWebDebugLogger} Factories 50.46 ms (1)
+Sep 04 03:51:19 symfony [info] {sfWebDebugLogger} Action "product/create" 1096.84 ms (1)
+Sep 04 03:51:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Sep 04 03:51:19 symfony [info] {sfWebDebugLogger} View "Success" for "product/create" 49.21 ms (1)
+Sep 04 03:51:19 symfony [info] {sfWebDebugLogger} Partial "product/_form" 22.98 ms (1)
+Sep 04 03:51:19 symfony [info] {sfWebResponse} Send content (43368 o)
+Sep 04 03:52:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Sep 04 03:52:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:52:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:52:09 symfony [info] {productActions} Call "productActions->executeNew()"
+Sep 04 03:52:09 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/newSuccess.php"
+Sep 04 03:52:09 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:52:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:52:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:52:10 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:52:10 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:52:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:52:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:52:10 symfony [info] {sfWebDebugLogger} Configuration 6.82 ms (9)
+Sep 04 03:52:10 symfony [info] {sfWebDebugLogger} Factories 46.24 ms (1)
+Sep 04 03:52:10 symfony [info] {sfWebDebugLogger} Action "product/new" 47.71 ms (1)
+Sep 04 03:52:10 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 1076.50 ms (1)
+Sep 04 03:52:10 symfony [info] {sfWebDebugLogger} Partial "product/_form" 1056.87 ms (1)
+Sep 04 03:52:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 03:52:10 symfony [info] {sfWebResponse} Send content (40881 o)
+Sep 04 03:52:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Sep 04 03:52:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:52:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:52:16 symfony [info] {productActions} Call "productActions->executeCreate()"
+Sep 04 03:52:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:52:17 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_category p WHERE p.id = ? - (1)
+Sep 04 03:52:17 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO product (product_category_id, name, description_short, description_long, price, image) VALUES (?, ?, ?, ?, ?, ?) - (1, dsdsd, sdsdsd, sdsdsdsdsdsd, , )
+Sep 04 03:52:18 symfony [info] {sfFrontWebController} Redirect to "http://127.0.0.1:8080/backend_dev.php/product/edit/id/1"
+Sep 04 03:52:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Sep 04 03:52:18 symfony [info] {sfWebResponse} Send header "Location: http://127.0.0.1:8080/backend_dev.php/product/edit/id/1"
+Sep 04 03:52:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:52:18 symfony [info] {sfWebDebugLogger} Configuration 5.74 ms (8)
+Sep 04 03:52:18 symfony [info] {sfWebDebugLogger} Factories 45.93 ms (1)
+Sep 04 03:52:18 symfony [info] {sfWebDebugLogger} Action "product/create" 1354.05 ms (1)
+Sep 04 03:52:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (3)
+Sep 04 03:52:18 symfony [info] {sfWebResponse} Send content (126 o)
+Sep 04 03:52:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Sep 04 03:52:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:52:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:52:18 symfony [info] {productActions} Call "productActions->executeEdit()"
+Sep 04 03:52:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:52:19 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Sep 04 03:52:19 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/editSuccess.php"
+Sep 04 03:52:19 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:52:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:52:19 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:52:19 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:52:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:52:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:52:19 symfony [info] {sfWebDebugLogger} Configuration 6.68 ms (9)
+Sep 04 03:52:19 symfony [info] {sfWebDebugLogger} Factories 47.32 ms (1)
+Sep 04 03:52:19 symfony [info] {sfWebDebugLogger} Action "product/edit" 1113.08 ms (1)
+Sep 04 03:52:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (3)
+Sep 04 03:52:19 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 44.17 ms (1)
+Sep 04 03:52:19 symfony [info] {sfWebDebugLogger} Partial "product/_form" 24.35 ms (1)
+Sep 04 03:52:19 symfony [info] {sfWebResponse} Send content (43920 o)
+Sep 04 03:53:13 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/update/id/1 with parameters array (  'module' => 'product',  'action' => 'update',  'id' => '1',)
+Sep 04 03:53:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:53:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:53:13 symfony [info] {productActions} Call "productActions->executeUpdate()"
+Sep 04 03:53:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:53:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Sep 04 03:53:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_category p WHERE p.id = ? - (1)
+Sep 04 03:53:14 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE product SET description_long = ? WHERE id = ? - (<b>Supe copada esta crema</b>
+<br/>
+<br/>
+Que buena crema loco!
+<br/>
+<br/>
+Esto es otra descripción re <i>COPADA</i>., 1)
+Sep 04 03:53:14 symfony [info] {sfFrontWebController} Redirect to "http://127.0.0.1:8080/backend_dev.php/product/edit/id/1"
+Sep 04 03:53:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Sep 04 03:53:14 symfony [info] {sfWebResponse} Send header "Location: http://127.0.0.1:8080/backend_dev.php/product/edit/id/1"
+Sep 04 03:53:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:53:14 symfony [info] {sfWebDebugLogger} Configuration 5.94 ms (8)
+Sep 04 03:53:14 symfony [info] {sfWebDebugLogger} Factories 44.20 ms (1)
+Sep 04 03:53:14 symfony [info] {sfWebDebugLogger} Action "product/update" 1169.71 ms (1)
+Sep 04 03:53:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (4)
+Sep 04 03:53:14 symfony [info] {sfWebResponse} Send content (126 o)
+Sep 04 03:53:14 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Sep 04 03:53:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:53:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:53:14 symfony [info] {productActions} Call "productActions->executeEdit()"
+Sep 04 03:53:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:53:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Sep 04 03:53:16 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/editSuccess.php"
+Sep 04 03:53:16 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/_form.php"
+Sep 04 03:53:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 03:53:16 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:53:16 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:53:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:53:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:53:16 symfony [info] {sfWebDebugLogger} Configuration 6.39 ms (9)
+Sep 04 03:53:16 symfony [info] {sfWebDebugLogger} Factories 45.24 ms (1)
+Sep 04 03:53:16 symfony [info] {sfWebDebugLogger} Action "product/edit" 1102.07 ms (1)
+Sep 04 03:53:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Sep 04 03:53:16 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 39.56 ms (1)
+Sep 04 03:53:16 symfony [info] {sfWebDebugLogger} Partial "product/_form" 19.50 ms (1)
+Sep 04 03:53:16 symfony [info] {sfWebResponse} Send content (44087 o)
+Sep 04 03:53:19 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Sep 04 03:53:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:53:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:53:19 symfony [info] {productActions} Call "productActions->executeIndex()"
+Sep 04 03:53:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:53:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p - ()
+Sep 04 03:53:20 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/indexSuccess.php"
+Sep 04 03:53:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p WHERE (p.id = ?) - (1)
+Sep 04 03:53:20 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "description" on "Product"
+Sep 04 03:53:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Sep 04 03:53:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:53:20 symfony [info] {sfWebDebugLogger} Configuration 10.89 ms (9)
+Sep 04 03:53:20 symfony [info] {sfWebDebugLogger} Factories 48.47 ms (1)
+Sep 04 03:53:20 symfony [info] {sfWebDebugLogger} Action "product/index" 1054.55 ms (1)
+Sep 04 03:53:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Sep 04 03:53:20 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 116.77 ms (1)
+Sep 04 03:53:49 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Sep 04 03:53:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:53:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:53:49 symfony [info] {productActions} Call "productActions->executeIndex()"
+Sep 04 03:53:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:53:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p - ()
+Sep 04 03:53:50 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/indexSuccess.php"
+Sep 04 03:53:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p WHERE (p.id = ?) - (1)
+Sep 04 03:53:50 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "description" on "Product"
+Sep 04 03:53:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Sep 04 03:53:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:53:50 symfony [info] {sfWebDebugLogger} Configuration 11.57 ms (9)
+Sep 04 03:53:50 symfony [info] {sfWebDebugLogger} Factories 53.53 ms (1)
+Sep 04 03:53:50 symfony [info] {sfWebDebugLogger} Action "product/index" 1052.20 ms (1)
+Sep 04 03:53:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Sep 04 03:53:50 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 126.22 ms (1)
+Sep 04 03:54:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Sep 04 03:54:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:54:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:54:21 symfony [info] {productActions} Call "productActions->executeIndex()"
+Sep 04 03:54:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:54:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p - ()
+Sep 04 03:54:22 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/indexSuccess.php"
+Sep 04 03:54:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p WHERE (p.id = ?) - (1)
+Sep 04 03:54:22 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:54:22 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:54:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:54:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:54:22 symfony [info] {sfWebDebugLogger} Configuration 6.99 ms (9)
+Sep 04 03:54:22 symfony [info] {sfWebDebugLogger} Factories 48.11 ms (1)
+Sep 04 03:54:22 symfony [info] {sfWebDebugLogger} Action "product/index" 1057.75 ms (1)
+Sep 04 03:54:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (3)
+Sep 04 03:54:22 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 45.04 ms (1)
+Sep 04 03:54:22 symfony [info] {sfWebResponse} Send content (36612 o)
+Sep 04 03:54:47 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Sep 04 03:54:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 03:54:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 03:54:47 symfony [info] {productActions} Call "productActions->executeIndex()"
+Sep 04 03:54:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 03:54:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p - ()
+Sep 04 03:54:48 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/indexSuccess.php"
+Sep 04 03:54:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p WHERE (p.id = ?) - (1)
+Sep 04 03:54:48 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:54:48 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 03:54:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 03:54:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 03:54:48 symfony [info] {sfWebDebugLogger} Configuration 8.44 ms (9)
+Sep 04 03:54:48 symfony [info] {sfWebDebugLogger} Factories 55.11 ms (1)
+Sep 04 03:54:48 symfony [info] {sfWebDebugLogger} Action "product/index" 1062.20 ms (1)
+Sep 04 03:54:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (3)
+Sep 04 03:54:48 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 51.22 ms (1)
+Sep 04 03:54:49 symfony [info] {sfWebResponse} Send content (36618 o)
+Sep 04 05:36:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Sep 04 05:36:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 05:36:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 05:36:57 symfony [info] {productActions} Call "productActions->executeIndex()"
+Sep 04 05:36:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 05:36:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.description_long AS p__description_long, p.price AS p__price, p.image AS p__image FROM product p - ()
+Sep 04 05:36:58 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/product/templates/indexSuccess.php"
+Sep 04 05:36:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p WHERE (p.id = ?) - (1)
+Sep 04 05:36:58 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:36:58 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:36:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 05:36:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 05:36:58 symfony [info] {sfWebDebugLogger} Configuration 15.17 ms (9)
+Sep 04 05:36:58 symfony [info] {sfWebDebugLogger} Factories 54.29 ms (1)
+Sep 04 05:36:58 symfony [info] {sfWebDebugLogger} Action "product/index" 1067.18 ms (1)
+Sep 04 05:36:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+Sep 04 05:36:58 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 61.69 ms (1)
+Sep 04 05:36:58 symfony [info] {sfWebResponse} Send content (36721 o)
+Sep 04 05:36:59 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /productCategory with parameters array (  'module' => 'productCategory',  'action' => 'index',)
+Sep 04 05:36:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 05:36:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 05:36:59 symfony [info] {productCategoryActions} Call "productCategoryActions->executeIndex()"
+Sep 04 05:37:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 05:37:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 05:37:00 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/indexSuccess.php"
+Sep 04 05:37:00 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:37:00 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:37:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 05:37:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 05:37:00 symfony [info] {sfWebDebugLogger} Configuration 55.43 ms (10)
+Sep 04 05:37:00 symfony [info] {sfWebDebugLogger} Factories 55.34 ms (1)
+Sep 04 05:37:00 symfony [info] {sfWebDebugLogger} Action "productCategory/index" 1054.63 ms (1)
+Sep 04 05:37:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 05:37:00 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/index" 40.91 ms (1)
+Sep 04 05:37:00 symfony [info] {sfWebResponse} Send content (34742 o)
+Sep 04 05:37:02 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Sep 04 05:37:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 05:37:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 05:37:02 symfony [info] {userActions} Call "userActions->executeIndex()"
+Sep 04 05:37:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 05:37:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.username AS u__username, u.password AS u__password, u.user_type_id AS u__user_type_id FROM user u - ()
+Sep 04 05:37:03 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/user/templates/indexSuccess.php"
+Sep 04 05:37:03 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:37:03 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:37:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 05:37:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 05:37:03 symfony [info] {sfWebDebugLogger} Configuration 57.89 ms (10)
+Sep 04 05:37:03 symfony [info] {sfWebDebugLogger} Factories 55.88 ms (1)
+Sep 04 05:37:03 symfony [info] {sfWebDebugLogger} Action "user/index" 1093.57 ms (1)
+Sep 04 05:37:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 05:37:03 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 72.46 ms (1)
+Sep 04 05:37:03 symfony [info] {sfWebResponse} Send content (33971 o)
+Sep 04 05:37:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /productCategory with parameters array (  'module' => 'productCategory',  'action' => 'index',)
+Sep 04 05:37:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 05:37:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 05:37:05 symfony [info] {productCategoryActions} Call "productCategoryActions->executeIndex()"
+Sep 04 05:37:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 05:37:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 05:37:06 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/indexSuccess.php"
+Sep 04 05:37:06 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:37:06 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 05:37:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 05:37:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 05:37:06 symfony [info] {sfWebDebugLogger} Configuration 13.70 ms (9)
+Sep 04 05:37:06 symfony [info] {sfWebDebugLogger} Factories 60.46 ms (1)
+Sep 04 05:37:06 symfony [info] {sfWebDebugLogger} Action "productCategory/index" 1086.91 ms (1)
+Sep 04 05:37:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 05:37:06 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/index" 35.45 ms (1)
+Sep 04 05:37:06 symfony [info] {sfWebResponse} Send content (34738 o)
+Sep 04 08:00:04 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /productCategory with parameters array (  'module' => 'productCategory',  'action' => 'index',)
+Sep 04 08:00:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:04 symfony [info] {productCategoryActions} Call "productCategoryActions->executeIndex()"
+Sep 04 08:00:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 08:00:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 08:00:05 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/indexSuccess.php"
+Sep 04 08:00:05 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:05 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 08:00:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:05 symfony [info] {sfWebDebugLogger} Configuration 11.55 ms (9)
+Sep 04 08:00:05 symfony [info] {sfWebDebugLogger} Factories 54.92 ms (1)
+Sep 04 08:00:05 symfony [info] {sfWebDebugLogger} Action "productCategory/index" 1064.27 ms (1)
+Sep 04 08:00:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 08:00:05 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/index" 30.36 ms (1)
+Sep 04 08:00:05 symfony [info] {sfWebResponse} Send content (34749 o)
+Sep 04 08:00:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productCategory/new with parameters array (  'module' => 'productCategory',  'action' => 'new',)
+Sep 04 08:00:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:08 symfony [info] {productCategoryActions} Call "productCategoryActions->executeNew()"
+Sep 04 08:00:08 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/newSuccess.php"
+Sep 04 08:00:08 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/_form.php"
+Sep 04 08:00:08 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:08 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 08:00:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:08 symfony [info] {sfWebDebugLogger} Configuration 6.60 ms (9)
+Sep 04 08:00:08 symfony [info] {sfWebDebugLogger} Factories 48.91 ms (1)
+Sep 04 08:00:08 symfony [info] {sfWebDebugLogger} Action "productCategory/new" 34.54 ms (1)
+Sep 04 08:00:08 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/new" 29.58 ms (1)
+Sep 04 08:00:08 symfony [info] {sfWebDebugLogger} Partial "productCategory/_form" 7.70 ms (1)
+Sep 04 08:00:08 symfony [info] {sfWebResponse} Send content (35633 o)
+Sep 04 08:00:20 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productCategory/create with parameters array (  'module' => 'productCategory',  'action' => 'create',)
+Sep 04 08:00:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:20 symfony [info] {productCategoryActions} Call "productCategoryActions->executeCreate()"
+Sep 04 08:00:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 08:00:21 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO product_category (name, description) VALUES (?, ?) - (Perfumes, Muchos perfumes re copados)
+Sep 04 08:00:21 symfony [info] {sfFrontWebController} Redirect to "http://127.0.0.1:8080/backend_dev.php/productCategory/edit/id/2"
+Sep 04 08:00:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Sep 04 08:00:21 symfony [info] {sfWebResponse} Send header "Location: http://127.0.0.1:8080/backend_dev.php/productCategory/edit/id/2"
+Sep 04 08:00:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:21 symfony [info] {sfWebDebugLogger} Configuration 6.12 ms (8)
+Sep 04 08:00:21 symfony [info] {sfWebDebugLogger} Factories 54.96 ms (1)
+Sep 04 08:00:21 symfony [info] {sfWebDebugLogger} Action "productCategory/create" 1107.49 ms (1)
+Sep 04 08:00:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 08:00:21 symfony [info] {sfWebResponse} Send content (134 o)
+Sep 04 08:00:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productCategory/edit/id/2 with parameters array (  'module' => 'productCategory',  'action' => 'edit',  'id' => '2',)
+Sep 04 08:00:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:22 symfony [info] {productCategoryActions} Call "productCategoryActions->executeEdit()"
+Sep 04 08:00:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 08:00:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p WHERE (p.id = ?) LIMIT 1 - (2)
+Sep 04 08:00:23 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/editSuccess.php"
+Sep 04 08:00:23 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/_form.php"
+Sep 04 08:00:23 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:23 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 08:00:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:23 symfony [info] {sfWebDebugLogger} Configuration 6.50 ms (9)
+Sep 04 08:00:23 symfony [info] {sfWebDebugLogger} Factories 47.29 ms (1)
+Sep 04 08:00:23 symfony [info] {sfWebDebugLogger} Action "productCategory/edit" 1088.63 ms (1)
+Sep 04 08:00:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 08:00:23 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/edit" 34.22 ms (1)
+Sep 04 08:00:23 symfony [info] {sfWebDebugLogger} Partial "productCategory/_form" 11.50 ms (1)
+Sep 04 08:00:23 symfony [info] {sfWebResponse} Send content (39596 o)
+Sep 04 08:00:25 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /productCategory with parameters array (  'module' => 'productCategory',  'action' => 'index',)
+Sep 04 08:00:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:26 symfony [info] {productCategoryActions} Call "productCategoryActions->executeIndex()"
+Sep 04 08:00:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 08:00:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 08:00:27 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/indexSuccess.php"
+Sep 04 08:00:27 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:27 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 08:00:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:27 symfony [info] {sfWebDebugLogger} Configuration 6.79 ms (9)
+Sep 04 08:00:27 symfony [info] {sfWebDebugLogger} Factories 50.47 ms (1)
+Sep 04 08:00:27 symfony [info] {sfWebDebugLogger} Action "productCategory/index" 1054.94 ms (1)
+Sep 04 08:00:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 08:00:27 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/index" 27.68 ms (1)
+Sep 04 08:00:27 symfony [info] {sfWebResponse} Send content (35002 o)
+Sep 04 08:00:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productCategory/new with parameters array (  'module' => 'productCategory',  'action' => 'new',)
+Sep 04 08:00:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:30 symfony [info] {productCategoryActions} Call "productCategoryActions->executeNew()"
+Sep 04 08:00:30 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/newSuccess.php"
+Sep 04 08:00:30 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/_form.php"
+Sep 04 08:00:30 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:30 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 08:00:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:30 symfony [info] {sfWebDebugLogger} Configuration 6.74 ms (9)
+Sep 04 08:00:30 symfony [info] {sfWebDebugLogger} Factories 49.01 ms (1)
+Sep 04 08:00:30 symfony [info] {sfWebDebugLogger} Action "productCategory/new" 35.12 ms (1)
+Sep 04 08:00:30 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/new" 29.21 ms (1)
+Sep 04 08:00:30 symfony [info] {sfWebDebugLogger} Partial "productCategory/_form" 8.12 ms (1)
+Sep 04 08:00:30 symfony [info] {sfWebResponse} Send content (35633 o)
+Sep 04 08:00:45 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productCategory/create with parameters array (  'module' => 'productCategory',  'action' => 'create',)
+Sep 04 08:00:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:45 symfony [info] {productCategoryActions} Call "productCategoryActions->executeCreate()"
+Sep 04 08:00:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 08:00:46 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO product_category (name, description) VALUES (?, ?) - (Shampoos, Muchos shampoos)
+Sep 04 08:00:46 symfony [info] {sfFrontWebController} Redirect to "http://127.0.0.1:8080/backend_dev.php/productCategory/edit/id/3"
+Sep 04 08:00:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Sep 04 08:00:46 symfony [info] {sfWebResponse} Send header "Location: http://127.0.0.1:8080/backend_dev.php/productCategory/edit/id/3"
+Sep 04 08:00:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:46 symfony [info] {sfWebDebugLogger} Configuration 5.68 ms (8)
+Sep 04 08:00:46 symfony [info] {sfWebDebugLogger} Factories 49.02 ms (1)
+Sep 04 08:00:46 symfony [info] {sfWebDebugLogger} Action "productCategory/create" 1081.47 ms (1)
+Sep 04 08:00:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 08:00:46 symfony [info] {sfWebResponse} Send content (134 o)
+Sep 04 08:00:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productCategory/edit/id/3 with parameters array (  'module' => 'productCategory',  'action' => 'edit',  'id' => '3',)
+Sep 04 08:00:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:47 symfony [info] {productCategoryActions} Call "productCategoryActions->executeEdit()"
+Sep 04 08:00:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 08:00:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p WHERE (p.id = ?) LIMIT 1 - (3)
+Sep 04 08:00:48 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/editSuccess.php"
+Sep 04 08:00:48 symfony [info] {sfPartialView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/_form.php"
+Sep 04 08:00:48 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:48 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 08:00:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:48 symfony [info] {sfWebDebugLogger} Configuration 6.68 ms (9)
+Sep 04 08:00:48 symfony [info] {sfWebDebugLogger} Factories 50.30 ms (1)
+Sep 04 08:00:48 symfony [info] {sfWebDebugLogger} Action "productCategory/edit" 1079.54 ms (1)
+Sep 04 08:00:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 08:00:48 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/edit" 33.53 ms (1)
+Sep 04 08:00:48 symfony [info] {sfWebDebugLogger} Partial "productCategory/_form" 11.22 ms (1)
+Sep 04 08:00:48 symfony [info] {sfWebResponse} Send content (39585 o)
+Sep 04 08:00:51 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /productCategory with parameters array (  'module' => 'productCategory',  'action' => 'index',)
+Sep 04 08:00:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Sep 04 08:00:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Sep 04 08:00:51 symfony [info] {productCategoryActions} Call "productCategoryActions->executeIndex()"
+Sep 04 08:00:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Sep 04 08:00:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description, p.image AS p__image FROM product_category p - ()
+Sep 04 08:00:52 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\modules/productCategory/templates/indexSuccess.php"
+Sep 04 08:00:52 symfony [info] {sfPHPView} Decorate content with "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:52 symfony [info] {sfPHPView} Render "C:\Program Files (x86)\EasyPHP-5.3.6.0\www\simple-site\apps\backend\templates/layout-control-panel.php"
+Sep 04 08:00:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Sep 04 08:00:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Sep 04 08:00:52 symfony [info] {sfWebDebugLogger} Configuration 7.78 ms (9)
+Sep 04 08:00:52 symfony [info] {sfWebDebugLogger} Factories 52.66 ms (1)
+Sep 04 08:00:52 symfony [info] {sfWebDebugLogger} Action "productCategory/index" 1054.66 ms (1)
+Sep 04 08:00:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Sep 04 08:00:52 symfony [info] {sfWebDebugLogger} View "Success" for "productCategory/index" 31.45 ms (1)
+Sep 04 08:00:52 symfony [info] {sfWebResponse} Send content (35235 o)
