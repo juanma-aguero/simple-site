@@ -1,16 +1,16 @@
 <?php
 
 /**
- * ProductCategory form base class.
+ * ProductLine form base class.
  *
- * @method ProductCategory getObject() Returns the current form's model object
+ * @method ProductLine getObject() Returns the current form's model object
  *
  * @package    simple-site
  * @subpackage form
  * @author     Your name here
  * @version    SVN: $Id: sfDoctrineFormGeneratedTemplate.php 29553 2010-05-20 14:33:00Z Kris.Wallsmith $
  */
-abstract class BaseProductCategoryForm extends BaseFormDoctrine
+abstract class BaseProductLineForm extends BaseFormDoctrine
 {
   public function setup()
   {
@@ -26,7 +26,7 @@ abstract class BaseProductCategoryForm extends BaseFormDoctrine
       'description' => new sfValidatorString(array('max_length' => 500, 'required' => false)),
     ));
 
-    $this->widgetSchema->setNameFormat('product_category[%s]');
+    $this->widgetSchema->setNameFormat('product_line[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
 
@@ -37,7 +37,7 @@ abstract class BaseProductCategoryForm extends BaseFormDoctrine
 
   public function getModelName()
   {
-    return 'ProductCategory';
+    return 'ProductLine';
   }
 
 }

@@ -16,16 +16,16 @@ abstract class BaseUserForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'           => new sfWidgetFormInputHidden(),
+      'user_type_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('UserType'), 'add_empty' => true)),
       'username'     => new sfWidgetFormInputText(),
       'password'     => new sfWidgetFormInputText(),
-      'user_type_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('UserType'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
       'id'           => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+      'user_type_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('UserType'), 'required' => false)),
       'username'     => new sfValidatorString(array('max_length' => 255)),
       'password'     => new sfValidatorString(array('max_length' => 255)),
-      'user_type_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('UserType'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('user[%s]');

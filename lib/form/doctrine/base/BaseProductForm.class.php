@@ -17,6 +17,7 @@ abstract class BaseProductForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'                  => new sfWidgetFormInputHidden(),
       'product_category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProductCategory'), 'add_empty' => true)),
+      'product_line_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProductLine'), 'add_empty' => true)),
       'name'                => new sfWidgetFormInputText(),
       'description_short'   => new sfWidgetFormTextarea(),
       'description_long'    => new sfWidgetFormTextarea(),
@@ -27,6 +28,7 @@ abstract class BaseProductForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'                  => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'product_category_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ProductCategory'), 'required' => false)),
+      'product_line_id'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('ProductLine'), 'required' => false)),
       'name'                => new sfValidatorString(array('max_length' => 255)),
       'description_short'   => new sfValidatorString(array('max_length' => 500)),
       'description_long'    => new sfValidatorString(array('max_length' => 1000)),

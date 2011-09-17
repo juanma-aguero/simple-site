@@ -13,15 +13,15 @@ abstract class BaseUserFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
+      'user_type_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('UserType'), 'add_empty' => true)),
       'username'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'password'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'user_type_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('UserType'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
+      'user_type_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('UserType'), 'column' => 'id')),
       'username'     => new sfValidatorPass(array('required' => false)),
       'password'     => new sfValidatorPass(array('required' => false)),
-      'user_type_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('UserType'), 'column' => 'id')),
     ));
 
     $this->widgetSchema->setNameFormat('user_filters[%s]');
@@ -42,9 +42,9 @@ abstract class BaseUserFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'           => 'Number',
+      'user_type_id' => 'ForeignKey',
       'username'     => 'Text',
       'password'     => 'Text',
-      'user_type_id' => 'ForeignKey',
     );
   }
 }
