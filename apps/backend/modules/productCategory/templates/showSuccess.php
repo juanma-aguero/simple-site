@@ -1,21 +1,22 @@
-
-<div>
 <table>
-    <tbody>
-        <tr>
-            <th>Nombre:</th>
-            <td><?php echo $product_category->getName() ?></td>
-        </tr>
-        <tr>
-            <th>Descripcion:</th>
-            <td><?php echo $product_category->getDescription() ?></td>
-        </tr>
-    </tbody>
+  <tbody>
+    <tr>
+      <th>Id:</th>
+      <td><?php echo $product_category->getId() ?></td>
+    </tr>
+    <tr>
+      <th>Name:</th>
+      <td><?php echo $product_category->getName() ?></td>
+    </tr>
+    <tr>
+      <th>Description:</th>
+      <td><?php echo $product_category->getDescription() ?></td>
+    </tr>
+  </tbody>
 </table>
-</div>
 
-<br/>
+<hr />
 
-<div class="bottom-buttons">
-    <a href="<?php echo url_for('productCategory/edit?id=' . $product_category->getId()) ?>">Editar</a>
-</div>
+<a href="<?php echo url_for('productCategory/edit?id='.$product_category->getId()) ?>">Edit</a>
+&nbsp;
+<a href="<?php echo url_for('productCategory/index') ?>">List</a>

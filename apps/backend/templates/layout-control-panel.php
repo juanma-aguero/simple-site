@@ -32,8 +32,10 @@
 
                 <div id="container-left">
                     <div class="category-menu">
+                        <a href="<?php echo url_for("productLine/index") ?>">Líneas de productos</a>
+                        <a href="<?php echo url_for("productCategory/index") ?>">Categorias de productos</a>
                         <a href="<?php echo url_for("product/index") ?>">Productos</a>
-                        <a href="<?php echo url_for("productCategory/index") ?>">Categorias</a>
+                        <a href="<?php echo url_for("service/index") ?>">Servicios</a>
                         <a href="<?php echo url_for("user/index") ?>">Usuarios</a>
                     </div>
 
@@ -41,10 +43,6 @@
 
                 <div id="container-center">
                     <?php echo $sf_content ?>
-                </div>
-
-                <div id="container-right">
-
                 </div>
             </div>
         </div>

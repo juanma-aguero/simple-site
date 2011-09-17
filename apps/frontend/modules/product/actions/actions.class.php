@@ -20,10 +20,10 @@ class productActions extends sfActions {
 
         $query = Doctrine_Core::getTable('Product')->createQuery('p');
 
-        $categoryId = $request->getParameter("id");
+        $this->categorySelected = $request->getParameter("id");
 
-        if ($categoryId) {
-            $query->andWhere("p.product_category_id = ?", $categoryId);
+        if ($this->categorySelected) {
+            $query->andWhere("p.product_category_id = ?", $this->categorySelected);
         }
 
         $this->products = $query->execute();

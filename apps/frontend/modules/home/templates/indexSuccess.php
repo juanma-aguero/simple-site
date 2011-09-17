@@ -1,4 +1,4 @@
-<span>Nosotros</span>
+<span class="section-title">Nosotros</span>
 <text class="page-description">
 Un día de spa es un "paquete" de diferentes servicios de spa que se toman en una misma jornada. Este "día" de Spa, no tiene por que ocuparnos el día completo (a no ser que dispongamos de tiempo suficiente y nuestra intención sea quedarnos un día entero en el spa). Si bien se los denomina "día", es un circuito que tiene una duración mínima sugerida y ella dependerá del tipo de día de spa que elijamos y de los objetivos.
 En nuestra nueva Colección de Experiencias de Spa te proponemos tres divinos Días de Spa y un Ritual, cada uno creado para que vos o tu homenajeado se reconecten con sus propias fuentes vitales del SER: Fuente de Re - Energía, Fuente de Belleza y Regeneración; y Fuente de Relajación y Dinamismo .

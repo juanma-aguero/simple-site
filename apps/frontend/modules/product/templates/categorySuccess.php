@@ -1,3 +1,12 @@
+<?php slot('content-left') ?>
+<div class='category-menu'>
+    <?php foreach ($categorys as $category): ?>
+        <a <?php if( $categorySelected == $category->getId()){ echo 'class="selected"'; }?> href='<?php echo url_for('product/category?id=' . $category->getId()) ?>'><?php echo $category ?></a>
+    <?php endforeach; ?>
+</div>
+<?php end_slot() ?>
+
+
 <div id="product-list">
     <?php foreach ($products as $product): ?>
         <div class="product">

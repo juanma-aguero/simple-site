@@ -19,6 +19,7 @@
     <table>
         <thead>
             <tr>
+                <th>Línea</th>
                 <th>Categoría</th>
                 <th>Nombre</th>
                 <th>Descripcion corta</th>
@@ -29,6 +30,7 @@
         <tbody>
             <?php foreach ($products as $product): ?>
                 <tr>
+                    <td><?php echo $product->getProductLine() ?></td>
                     <td><?php echo $product->getProductCategory() ?></td>
                     <td><?php echo $product->getName() ?></td>
                     <td><?php echo $product->getDescriptionShort() ?></td>

@@ -11,6 +11,11 @@
         <?php echo $form->renderHiddenFields(); ?>
         <div class="form-new">
             <div><?php
+                echo $form['product_line_id']->renderError();
+                echo $form['product_line_id']->renderLabel();
+                echo $form['product_line_id']?>
+            </div>
+            <div><?php
                 echo $form['product_category_id']->renderError();
                 echo $form['product_category_id']->renderLabel();
                 echo $form['product_category_id']?>
@@ -41,7 +46,7 @@
 
         </div>
         <br/>
-        <div style="text-align: center; border-top: 1px #555 solid;">
+        <div class="bottom-buttons">
             <?php if (!$form->getObject()->isNew()): ?>
                 &nbsp;<?php echo link_to('Eliminar', 'product/delete?id=' . $form->getObject()->getId(), array('method' => 'delete', 'confirm' => 'Estas seguro?')) ?>
 <?php endif; ?>

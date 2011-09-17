@@ -18,10 +18,21 @@
             <div id="header">
                 <div id="header-main-content">
                     <div class="homepage-menu">
-                        <a class="history-link" href="<?php echo url_for("@homepage") ?>">Inicio</a>
-                        <a class="history-link" href="<?php echo url_for("product/index") ?>">Productos</a>
-                        <a class="history-link" href="<?php echo url_for("service/index") ?>">Servicios</a>
-                        <a class="history-link" href="<?php echo url_for("@homepage") ?>">Contacto</a>
+                        <div class="homepage-menu-item">
+                            <a href="<?php echo url_for("@homepage") ?>">Inicio</a>
+                        </div>
+                        <div class="homepage-menu-item">
+                            <a href="<?php echo url_for("product/index") ?>">Productos</a>
+                            <a href="<?php echo url_for("service/index") ?>">Servicios</a>
+                            <a href="<?php echo url_for("home/contact") ?>">Contacto</a>
+                        </div>
+                        <div class="homepage-menu-item">
+                            <a href="<?php echo url_for("service/index") ?>">Servicios</a>
+                            <a href="<?php echo url_for("home/contact") ?>">Contacto</a>
+                        </div>
+                        <div class="homepage-menu-item">
+                            <a href="<?php echo url_for("home/contact") ?>">Contacto</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,7 +46,9 @@
 
                     <!-- left side -->
                     <div id="container-left">
-
+                        <?php if (!include_slot('content-left')): ?>
+                            Jobeet - Your best job board
+                        <?php endif ?>
                     </div>
 
                     <!-- center side -->
@@ -45,7 +58,7 @@
 
                     <!-- right side -->
                     <div id="container-right">
-                        <iframe src="http://www.facebook.com/plugins/activity.php?site=www.rominabelleza.com.ar&amp;width=160&amp;height=300&amp;header=true&amp;colorscheme=dark&amp;font&amp;border_color&amp;recommendations=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:300px; margin-top: 30px;" allowTransparency="true"></iframe>
+<!--                        <iframe src="http://www.facebook.com/plugins/activity.php?site=www.rominabelleza.com.ar&amp;width=160&amp;height=300&amp;header=true&amp;colorscheme=default;font&amp;border_color&amp;recommendations=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:300px; margin-top: 30px;" allowTransparency="true"></iframe>-->
                     </div>
 
                 </div>
