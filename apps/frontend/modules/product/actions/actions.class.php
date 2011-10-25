@@ -11,24 +11,24 @@
 class productActions extends sfActions {
 
     public function executeIndex(sfWebRequest $request) {
-        $this->categorys = Doctrine_Core::getTable('ProductCategory')
+        $this->productLines = Doctrine_Core::getTable('ProductLine')
                 ->createQuery('a')
                 ->execute();
     }
 
-    public function executeCategory(sfWebRequest $request) {
+    public function executeLine(sfWebRequest $request) {
 
         $query = Doctrine_Core::getTable('Product')->createQuery('p');
 
-        $this->categorySelected = $request->getParameter("id");
+        $this->lineSelected = $request->getParameter("id");
 
-        if ($this->categorySelected) {
-            $query->andWhere("p.product_category_id = ?", $this->categorySelected);
+        if ($this->lineSelected) {
+            $query->andWhere("p.product_line_id = ?", $this->lineSelected);
         }
 
         $this->products = $query->execute();
 
-        $this->categorys = Doctrine_Core::getTable('ProductCategory')
+        $this->productLines = Doctrine_Core::getTable('ProductLine')
                 ->createQuery('a')
                 ->execute();
     }

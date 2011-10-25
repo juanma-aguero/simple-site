@@ -2,6 +2,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn: 'mysql:host=localhost;dbname=site-simple'
+      dsn: 'mysql:host=localhost;dbname=romina-belleza-dev'
       username: root
-      password: null
+      password: root

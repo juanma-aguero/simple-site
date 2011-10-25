@@ -15,8 +15,8 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Description</th>
+                <th>Nombre</th>
+                <th>Descripci&oacute;n</th>
                 <th></th>
             </tr>
         </thead>

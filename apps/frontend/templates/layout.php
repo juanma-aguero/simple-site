@@ -11,37 +11,30 @@
     </head>
     <body>
 
-        <div id="userbar">
-        </div>
-        <div id="shadowBody">
-            <!-- header -->
-            <div id="header">
-                <div id="header-main-content">
-                    <div class="homepage-menu">
-                        <div class="homepage-menu-item">
-                            <a href="<?php echo url_for("@homepage") ?>">Inicio</a>
-                        </div>
-                        <div class="homepage-menu-item">
-                            <a href="<?php echo url_for("product/index") ?>">Productos</a>
-                            <a href="<?php echo url_for("service/index") ?>">Servicios</a>
-                            <a href="<?php echo url_for("home/contact") ?>">Contacto</a>
-                        </div>
-                        <div class="homepage-menu-item">
-                            <a href="<?php echo url_for("service/index") ?>">Servicios</a>
-                            <a href="<?php echo url_for("home/contact") ?>">Contacto</a>
-                        </div>
-                        <div class="homepage-menu-item">
-                            <a href="<?php echo url_for("home/contact") ?>">Contacto</a>
-                        </div>
+        <!-- header -->
+        <div id="header">
+            <div id="header-main-content">
+                <div class="homepage-menu">
+                    <div class="homepage-menu-item">
+                        <a href="<?php echo url_for("@homepage") ?>"><b>quienes</b> somos</a>
+                    </div>
+                    <div class="homepage-menu-item">
+                        <a href="<?php echo url_for("producto/linea?id=1") ?>"><b>nuestros</b> productos</a>
+                    </div>
+                    <div class="homepage-menu-item">
+                        <a href="<?php echo url_for("servicio/index") ?>"><b>nuestros</b> Servicios</a>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- content -->
-            <div id="content">
-                <div id="main-container">
-                    <div id="navigation-bar">
-                        <a>inicio</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a>producto</a>
+        <!-- content -->
+        <div id="content">
+            <div id="main-container">
+
+                <div style="width: 768px;display: inline-block;">
+                    <div id ="slot-title">
+
                     </div>
 
                     <!-- left side -->
@@ -55,22 +48,49 @@
                     <div id="container-center">
                         <?php echo $sf_content ?>
                     </div>
-
-                    <!-- right side -->
-                    <div id="container-right">
-<!--                        <iframe src="http://www.facebook.com/plugins/activity.php?site=www.rominabelleza.com.ar&amp;width=160&amp;height=300&amp;header=true&amp;colorscheme=default;font&amp;border_color&amp;recommendations=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:300px; margin-top: 30px;" allowTransparency="true"></iframe>-->
-                    </div>
-
                 </div>
+
+                <!-- right side -->
+                <div id="container-right">
+                    <div id="promo-header">
+
+                    </div>
+                    <div id="promo-body">
+                        <div id="promo-container">
+                            <div class="promo-picture-container"></div>
+                            <div class="promo-picture-container"></div>
+                            <div class="promo-picture-container"></div>
+                        </div>
+                    </div>
+                    <div id="promo-footer">
+                        &nbsp;&nbsp;
+                        <a onclick="followingPromo();">&lt;&lt;</a>
+                        &nbsp;&nbsp;
+                        <a onclick="playPausePromo();">&rang;</a>
+                        &nbsp;&nbsp;
+                        <a onclick="nextPromo();">&gt;&gt;</a>
+                        <div id="promo-text">
+                            <h4>Spa para 2 personas</h4>
+                            Masaje relajante, mascarilla
+                            <br/>
+                            <br/>
+                            <b>$260</b>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+
         <!-- footer -->
         <div id="footer">
-            <div id="footer-links">
-                <a href="<?php echo url_for("@homepage") ?>">Nosotros</a>
-                <a href="<?php echo url_for("product/index") ?>">Productos</a>
-                <a href="<?php echo url_for("service/index") ?>">Servicios</a>
-                <a href="<?php echo url_for("@homepage") ?>">Contacto</a>
+            <div id="footer-content">
+                <div id="footer-links">
+                    <a href="<?php echo url_for("@homepage") ?>">Nosotros</a>
+                    <a href="<?php echo url_for("product/index") ?>">Productos</a>
+                    <a href="<?php echo url_for("service/index") ?>">Servicios</a>
+                    <a href="<?php echo url_for("@homepage") ?>">Contacto</a>
+                </div>
             </div>
         </div>
     </body>

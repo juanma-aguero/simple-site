@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/var/www/simple-site/apps/frontend/templates/layout.php</file>
+        <file>file:/var/www/simple-site/web/js/global-functions.js</file>
+        <file>file:/var/www/simple-site/apps/frontend/modules/product/templates/indexSuccess.php</file>
+        <file>file:/var/www/simple-site/apps/frontend/modules/product/templates/categorySuccess.php</file>
+        <file>file:/var/www/simple-site/web/css/main_blue.css</file>
+        <file>file:/var/www/simple-site/apps/frontend/modules/product/actions/actions.class.php</file>
+    </open-files>
 </project-private>

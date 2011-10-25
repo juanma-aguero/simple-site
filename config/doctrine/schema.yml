@@ -12,6 +12,7 @@ UserType:
 
 Product:
   columns:
+    product_line_id: { type: integer, notnull: true }
     product_category_id: { type: integer }
     name: { type: string(255), notnull: true }
     description_short: { type: string(500), notnull: true }
@@ -20,12 +21,17 @@ Product:
     image: { type: string(255) }
   relations:
     ProductCategory: { local: product_category_id, foreign: id }
+    ProductLine: { local: product_line_id, foreign: id }
 
 ProductCategory:
   columns:
     name: { type: string(255), notnull: true }
     description: { type: string(500) }
-    image: { type: string(255) }
+
+ProductLine:
+  columns:
+    name: { type: string(255), notnull: true }
+    description: { type: string(500) }
 
 Service:
   columns:

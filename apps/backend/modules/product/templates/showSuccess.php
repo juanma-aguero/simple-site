@@ -1,38 +1,33 @@
 <table>
     <tbody>
         <tr>
-            <th>Id:</th>
-            <td><?php echo $product->getId() ?></td>
+            <th>L&iacute;nea</th>
+            <td><?php echo $product->getProductLine() ?></td>
         </tr>
         <tr>
-            <th>Name:</th>
+            <th>Nombre</th>
             <td><?php echo $product->getName() ?></td>
         </tr>
         <tr>
-            <th>Description:</th>
+            <th>Descripcion corta</th>
             <td><?php echo $product->getDescriptionShort() ?></td>
         </tr>
         <tr>
-            <th>Description:</th>
+            <th>Descripcion larga</th>
             <td><?php echo $product->getDescriptionLong() ?></td>
         </tr>
         <tr>
-            <th>Price:</th>
+            <th>Precio</th>
             <td><?php echo $product->getPrice() ?></td>
         </tr>
         <tr>
-            <th>Image:</th>
-            <td><?php echo $product->getImage() ?></td>
-        </tr>
-        <tr>
-            <th>Product category:</th>
-            <td><?php echo $product->getProductCategoryId() ?></td>
+            <th>Imagen</th>
+            <td><img src="/uploads/<?php echo $product->getImage() ?>" /></td>
         </tr>
     </tbody>
 </table>
 
-<hr />
-
-<a href="<?php echo url_for('product/edit?id=' . $product->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('product/index') ?>">List</a>
+<div class="bottom-buttons">
+<a href="<?php echo url_for('product/edit?id=' . $product->getId()) ?>">Editar</a>
+<a href="<?php echo url_for('product/index') ?>">Volver al listado</a>
+</div>

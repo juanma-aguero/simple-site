@@ -1,7 +1,7 @@
 <?php slot('content-left') ?>
 <div class='category-menu'>
-    <?php foreach ($categorys as $category): ?>
-        <a class='history-link' href='<?php echo url_for('product/category?id=' . $category->getId()) ?>'><?php echo $category ?></a>
+    <?php foreach ($productLines as $productLine): ?>
+        <a <?php if( $lineSelected == $productLine->getId()){ echo 'class="selected"'; }?> href='<?php echo url_for('product/line?id=' . $productLine->getId()) ?>'><?php echo $productLine ?></a>
     <?php endforeach; ?>
 </div>
 <?php end_slot() ?>

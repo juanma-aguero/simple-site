@@ -3,6 +3,23 @@ body{
     font-family: arial;
 }
 
+input{
+    border: 1px #67E300 solid;
+}
+button{
+    color: white;
+    border: 1px solid #E40045;
+    background-color: #F13C73;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #94002D;
+}
+
+h1{
+    color: #E40045;
+}
+
 #header{
     margin-top: 0px;
     height: 200px;
@@ -12,7 +29,7 @@ body{
     background-image: url('/images/bg.png');
     background-repeat: repeat-x;
     display: table;
-    width: 80%;
+    width: 1000px;
     margin: auto;
     border: 1px #ddd solid;
 }
@@ -71,27 +88,27 @@ body{
 #container-left{
     vertical-align: top;
     display: inline-block;
-    width: 15.5%;
+    width: 180px;
     min-height: 550px;
-    border: 1px #ddd solid;
+    border: 1px #67E300 solid;
 }
 #container-center{
     display: inline-block;
     vertical-align: top;
-    width: 66%;
+    width: 800px;
     min-height: 550px;
-    border: 1px #ddd solid;
+    border: 1px #67E300 solid;
 }
 #container-right{
     vertical-align: top;
     display: inline-block;
     width: 17%;
     min-height: 550px;
-    border: 1px #ddd solid;
+    border: 1px #67E300 solid;
 }
 #main-container{
     margin: auto;
-    width: 80%;
+    width: 1000px;
 }
 
 #userbar{
@@ -143,16 +160,13 @@ body{
     vertical-align: middle;
     padding: 10px;
     text-align: center;
-    background-color: #ddd;
+    background-color: #A9F16C;
 }
 .category-menu a:hover{
     color: white;
-    background-color: #555;
+    background-color: #439400;
 }
 
-div{
-   
-}
 
 .page-description{
     color: #666;
@@ -170,19 +184,40 @@ div{
 
 .listadoTabla table{
     width: 100%;
-    border: 1px solid black;
-    background-color: silver;
+    border: 1px solid #67E300;
+    background-color: #A9F16C;
 }
 .listadoTabla td{
     background-color: white;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #67E300;
     width: auto;
 }
 
 .bottom-buttons{
-    text-align: center; border-top: 1px #555 solid;
+    height: 50px;
+    text-align: center;
+    border-top: 5px #A9F16C solid;
+    margin-top: 50px;
 }
+.bottom-buttons a,.bottom-buttons input{
+    float: left;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    height: 20px;
+    display: block;
+    width: 150px;
+    color: white;
+    border: 1px solid #E40045;
+    background-color: #F13C73;    
+    text-decoration: none;
+}
+.bottom-buttons a:hover,.bottom-buttons input:hover{
+    cursor: pointer;
+    background-color: #94002D;
+}   
 
 .form-new{
     width: 550px; 

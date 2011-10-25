@@ -16,11 +16,6 @@
                 echo $form['product_line_id']?>
             </div>
             <div><?php
-                echo $form['product_category_id']->renderError();
-                echo $form['product_category_id']->renderLabel();
-                echo $form['product_category_id']?>
-            </div>
-            <div><?php
                 echo $form['name']->renderError();
                 echo $form['name']->renderLabel();
                 echo $form['name']?>
