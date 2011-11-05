@@ -19,4 +19,38 @@ class homeActions extends sfActions {
         
     }
 
+    public function executeLogin(sfWebRequest $request) {
+        
+    }
+
+    public function executeLogout(sfWebRequest $request) {
+
+        $this->getUser()->setAuthenticated(false);
+        $this->getUser()->shutdown();
+        return $this->redirect("home/index");
+    }
+
+    public function executeValidateLogin(sfWebRequest $request) {
+
+        $username = $request->getParameter('username');
+        $password = $request->getParameter('password');
+        
+        $query = Doctrine_Core::getTable('User')->createQuery('u');
+        $query->andWhere("u.username = ?", "$username");
+        $query->andWhere("u.password = ?", "$password");
+
+        $usuarios = $query->execute();
+        
+        $valid = false;
+        
+        if( $usuarios->count() > 0 ) $valid = true;
+
+        if ($valid) {
+            $this->getUser()->setAuthenticated(true);
+            $this->redirect("home/index");
+        }else{
+            return $this->redirect("home/login");
+        }
+    }
+
 }

@@ -6,15 +6,15 @@ default:
     content-type: text/html
 
   metas:
-    title:        Romina Belleza
-    description:  estetica y spa
+    title:        Romina Crugo
+    description:  Estética y Spa
     keywords:     estetica, spa
     language:     es
     robots:       index, follow
 
   stylesheets:    [main_blue.css, jquery-ui-1.8.16.custom.css]
 
-  javascripts:    [jquery-1.6.2.min.js, jquery-ui-1.8.16.custom.min.js, jquery.history.js, global-functions.js]
+  javascripts:    [jquery-1.6.2.min.js, jquery-ui-1.8.16.custom.min.js, jquery.history.js, global-functions.js, jquery.floatobject.js]
 
   has_layout:     true
   layout:         layout

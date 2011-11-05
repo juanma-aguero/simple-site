@@ -1,24 +1,44 @@
-<h1>Services List</h1>
+<script type="text/javascript" >
+    $(document).ready(function(){
+            var menuLinks = $('.category-menu a');
+            menuLinks.click(function(){
+                menuLinks.removeClass('selected');
+                $(this).addClass('selected');
+            });
+        
+        $('#service-menu').makeFloat({
+            x: 'current',
+            y: 'current',
+            speed: 'fast'
+        });
+    });
+    
+    function scrollToPosition(objectId) {
+        var obj = $('#'+objectId);
+        var position = obj.offset();
+        self.scrollTo(position.left, position.top);
+    }
+    
+</script>
 
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image</th>
-    </tr>
-  </thead>
-  <tbody>
+<?php slot('content-left') ?>
+<div id="service-menu" class='category-menu'>
     <?php foreach ($services as $service): ?>
-    <tr>
-      <td><a href="<?php echo url_for('service/show?id='.$service->getId()) ?>"><?php echo $service->getId() ?></a></td>
-      <td><?php echo $service->getName() ?></td>
-      <td><?php echo $service->getDescription() ?></td>
-      <td><?php echo $service->getImage() ?></td>
-    </tr>
+        <a onclick="scrollToPosition('<?php echo $service->getId() ?>');" ><?php echo $service ?></a>
     <?php endforeach; ?>
-  </tbody>
-</table>
+</div>
+<?php end_slot() ?>
 
-  <a href="<?php echo url_for('service/new') ?>">New</a>
+
+<img src="/images/foto-servicio.png" width="515px" alt="quienes somos"/>
+
+
+<div id="service-list">
+    <?php foreach ($services as $service): ?>
+        <div class="service">
+            <span id="<?php echo $service->getId() ?>" class="service-title"><?php echo $service->getName() ?></span>
+            <br/>
+            <div class="service-description"  ><?php echo $service->getDescription(ESC_RAW) ?></div>
+        </div>
+    <?php endforeach; ?>
+</div>

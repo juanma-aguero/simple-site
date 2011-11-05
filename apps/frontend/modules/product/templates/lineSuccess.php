@@ -16,7 +16,7 @@
                 <a><img src="/uploads/thumbnails/<?php echo $product->getImage() ?>"/></a>
             </div>
             <div class="product-description-thumbs" onclick="showProduct(<?php echo $product->getId() ?>, '<?php echo $product ?>')">
-                <a><?php echo $product ?></a>
+                <span><?php echo $product ?></span>
             </div>
         </div>
 <?php endforeach; ?>
@@ -27,10 +27,10 @@
         <div id="<?php echo $product->getId() ?>">
             <div class="product">
                 <div class="product-image">
-                    <a><img src="/uploads/thumbnails/<?php echo $product->getImage() ?>"/></a>
+                    <a><img src="/uploads/<?php echo $product->getImage() ?>"/></a>
                 </div>
                 <div class="product-description">
-                    <a href="<?php echo url_for('product/show?id=' . $product->getId()) ?>"><?php echo $product ?></a>
+                    <a><?php echo $product ?></a>
                     <p><?php echo $product->getDescriptionShort() ?></p>
                     <span class="">Precio: <?php echo $product->getPrice() ?></span>
                 </div>

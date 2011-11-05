@@ -1,7 +1,7 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 <link type="text/css" href="/css/rich-text.css" rel="stylesheet" />
-<script type="application/javascript" src="/js/jquery-1.5.1.min.js"></script>
+<script type="application/javascript" src="/js/jquery-1.6.2.min.js"></script>
 <script type="application/javascript" src="/js/rich-text.js"></script>
 <div>
     <form action="<?php echo url_for('product/' . ($form->getObject()->isNew() ? 'create' : 'update') . (!$form->getObject()->isNew() ? '?id=' . $form->getObject()->getId() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
@@ -34,6 +34,7 @@
             <?php echo $form['description_long'] ?>
             <br/>
             <label>Preview</label>
+            <br/>
             <div class="rich-text-div"></div>
             
             <div><?php echo $form['price']->renderRow() ?></div>

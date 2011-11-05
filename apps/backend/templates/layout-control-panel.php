@@ -13,7 +13,12 @@
         <!-- header -->
         <div id="header">
             <div id="userbar">
-                <a href="">Ir al Sitio</a>
+                <a href="http://www.rominacrugo.com.ar">Ir al Sitio</a>
+                <?php if( $sf_user->isAuthenticated() ): ?>
+                    <a href="<?php echo url_for("home/logout") ?>" >Salir</a>
+                <?php else: ?>
+                    <a href="<?php echo url_for("home/login") ?>" >Login</a>
+                <?php endif; ?>
             </div>
             <div id="header-main-content">
                 <div class="homepage-banner">

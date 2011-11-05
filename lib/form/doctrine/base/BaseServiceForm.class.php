@@ -24,7 +24,7 @@ abstract class BaseServiceForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'name'        => new sfValidatorString(array('max_length' => 255)),
-      'description' => new sfValidatorString(array('max_length' => 1000)),
+      'description' => new sfValidatorString(array('max_length' => 2000)),
       'image'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
 
