@@ -25,7 +25,7 @@ h1{
     height: 200px;
 }
 #header-main-content{
-    background-color: #555;
+    background-color: #439400;
     background-image: url('/images/bg.png');
     background-repeat: repeat-x;
     display: table;
@@ -81,7 +81,8 @@ h1{
 }
 
 #footer{
-    background-color: #333;
+    border-top: 5px #67E300 solid;
+    background-color: #439400;
     height: 200px;
 }
 
@@ -113,7 +114,16 @@ h1{
 
 #userbar{
     height: 30px;
-    background-color: #333;
+    background-color: #439400;
+    border-bottom: 2px #67E300 solid;
+}
+#userbar a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    float: left;
+    display: block;
+    margin-left: 20px;
 }
 
 .product{
@@ -234,4 +244,19 @@ h1{
     float: left;
     width: 200px;
     vertical-align: top;
+}
+
+
+.login-box{
+    height: 100px;
+    display: table;
+    margin: auto;
+}
+.login-box label{
+    float: left;
+    display: block;
+    width: 100px;
+}
+.login-box input{
+    width: 150px;
 }

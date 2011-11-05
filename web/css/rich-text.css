@@ -22,8 +22,12 @@
 .rich-text-div{
     font-size: 10px;
     text-align: left;
-    width: 200px; height: 100px; border: 1px grey solid;
+    width: 400px; 
+    height: 100px; 
+    border: 1px grey solid;
     margin: auto;
+    display: block;
+    text-align: justify;
 }
 .rich-text-area{
     width: 100%;
