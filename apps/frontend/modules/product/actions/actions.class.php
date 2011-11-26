@@ -17,6 +17,8 @@ class productActions extends sfActions {
     }
 
     public function executeLine(sfWebRequest $request) {
+        
+        $this->getResponse()->setTitle( 'Productos | Romina Crugo', false);
 
         $query = Doctrine_Core::getTable('Product')->createQuery('p');
 

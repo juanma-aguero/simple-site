@@ -6,11 +6,11 @@
                 $(this).addClass('selected');
             });
         
-        $('#service-menu').makeFloat({
-            x: 'current',
-            y: 'current',
-            speed: 'fast'
-        });
+//        $('#service-menu').makeFloat({
+//            x: 'current',
+//            y: 'current',
+//            speed: 'fast'
+//        });
     });
     
     function scrollToPosition(objectId) {
@@ -21,6 +21,7 @@
     
 </script>
 
+<?php slot('title','nuestros servicios') ?>
 <?php slot('content-left') ?>
 <div id="service-menu" class='category-menu'>
     <?php foreach ($services as $service): ?>

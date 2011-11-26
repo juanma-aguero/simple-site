@@ -1,3 +1,4 @@
+<?php slot('title','nuestros productos') ?>
 <?php slot('content-left') ?>
 <div class='category-menu'>
     <?php foreach ($productLines as $productLine): ?>

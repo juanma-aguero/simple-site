@@ -23,7 +23,7 @@ $(document).ready(function(){
         }, 200);
     });
     
-    //promoLoop();
+    startLoop();
     
 });
 
@@ -38,12 +38,18 @@ function nextPromo(){
     var now = (promoCount-1)*promoWidth;
    
     if(timer < (now)){
-        $("#promo-container").animate({
+        $("#promo-container").stop().animate({
+            left: '-=225'
+        }, 200);
+        $("#promo-container-text").stop().animate({
             left: '-=225'
         }, 200);
         timer += 225;
     }else{
-        $("#promo-container").animate({
+        $("#promo-container").stop().animate({
+            left: '0'
+        }, 200);
+        $("#promo-container-text").stop().animate({
             left: '0'
         }, 200);
         timer = 0;
@@ -51,27 +57,39 @@ function nextPromo(){
 }
 function playPausePromo(){
     if(promoRunning){
-        clearTimeout(timerID);
-        promoRunning = false;
+        stopLoop();
     }else{
-        promoLoop();
+        startLoop();
     }
 }
 function followingPromo(){
     if(timer > 0){
-        $("#promo-container").animate({
+        $("#promo-container").stop().animate({
+            left: '+=225'
+        }, 200);
+        $("#promo-container-text").stop().animate({
             left: '+=225'
         }, 200);
         timer -= 225;
     }
 }
 
-setTimeout("promoLoop()", promoTime);
-function promoLoop(){
-    promoRunning = true;
-    nextPromo();
-    timerID=setInterval("promoLoop()", promoTime);
+function startLoop(){
+    function promoLoop(){
+        promoRunning = true;
+        nextPromo();
+    }
+    stopLoop();
+    timerID=setInterval(promoLoop, promoTime);
 }
+
+function stopLoop(){
+        clearInterval(timerID);
+        promoRunning = false;
+}
+
+
+
 
 function showProduct( id, name ){
     

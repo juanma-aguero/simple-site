@@ -34,10 +34,10 @@
                         <a href="<?php echo url_for("@homepage") ?>"><b>quienes</b> somos</a>
                     </div>
                     <div class="homepage-menu-item">
-                        <a href="<?php echo url_for("producto/linea?id=1") ?>"><b>nuestros</b> productos</a>
+                        <a href="<?php echo url_for("servicio/index") ?>"><b>nuestros</b> servicios</a>
                     </div>
                     <div class="homepage-menu-item">
-                        <a href="<?php echo url_for("servicio/index") ?>"><b>nuestros</b> Servicios</a>
+                        <a href="<?php echo url_for("producto/linea?id=1") ?>"><b>nuestros</b> productos</a>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
                 <div style="width: 768px;display: inline-block;">
                     <div id ="slot-title">
-
+                        <span><?php include_slot('title') ?></span>
                     </div>
 
                     <!-- left side -->
@@ -72,9 +72,9 @@
                     </div>
                     <div id="promo-body">
                         <div id="promo-container">
-                            <div class="promo-picture-container"></div>
-                            <div class="promo-picture-container"></div>
-                            <div class="promo-picture-container"></div>
+                            <div class="promo-picture-container" style="background-image: url('/images/promo-spa1.jpg');"></div>
+                            <div class="promo-picture-container" style="background-image: url('/images/promo-spa2.jpg');"></div>
+                            <div class="promo-picture-container" style="background-image: url('/images/promo-spa3.jpg');"></div>
                         </div>
                     </div>
                     <div id="promo-footer">
@@ -84,16 +84,37 @@
                         <a onclick="playPausePromo();">||</a>
                         &nbsp;
                         <a onclick="nextPromo();">&gt;&gt;</a>
-                        <div id="promo-text">
-                            <h4>Spa para 2 personas</h4>
-                            Masaje relajante, mascarilla
-                            <br/>
-                            <br/>
-                            <b>$260</b>
+                        <div id="promo-container-text">
+                            <div class="promo-text" >
+                                <div class="promo-text-desc">
+                                <h4>Spa para 2 personas</h4>
+                                Masaje relajante, mascarilla
+                                <br/>
+                                <br/>
+                                <b>$260</b>
+                                </div>
+                            </div>
+                            <div class="promo-text" >
+                                <div class="promo-text-desc">
+                                <h4>Spa para 2 personas</h4>
+                                Masaje relajante
+                                <br/>
+                                <br/>
+                                <b>$195</b>
+                                </div>
+                            </div>
+                            <div class="promo-text" >
+                                <div class="promo-text-desc">
+                                <h4>Spa para 1 persona</h4>
+                                Masaje relajante, mascarilla
+                                <br/>
+                                <br/>
+                                <b>$200</b>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="fb-like" data-href="http://www.rominacrugo.com.ar" data-send="false" data-layout="box_count" data-width="300" data-show-faces="true" data-font="verdana"></div>
-                    <br/>
                     <br/>
                     <br/>
                 </div>
@@ -111,9 +132,9 @@
                 </div>
             </div>
             <div id="footer-designedby">
-                <span>Diseñado por broquaestudio 2011</span>
-                <span>www.broquaestudio.com.ar</span>
-                <span>Reservados todos los derechos.</span>
+                <div style="float: left; width: 175px">Diseñado por broquaestudio 2011</div>
+                <div style="float: left; margin-left: 25px;  width: 134px;"><a href="http://www.broquaestudio.com.ar" target="_blank">www.broquaestudio.com.ar</a></div>
+                <div style="float: right;  width: 160px">Reservados todos los derechos.</div>
             </div>
         </div>
     </body>

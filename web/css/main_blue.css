@@ -63,7 +63,6 @@ a.homepage-menu:hover{
 
 
 #content{
-    min-height: 579px;
 }
 
 #footer{
@@ -94,54 +93,58 @@ a.homepage-menu:hover{
     color: #5A1400;
 }
 #footer-designedby{
-    width: 580px;
-    margin: 5px auto auto;
+    width: 520px;
+    line-height: 12px;
+    margin: 5px auto 10px 525px;
     font-family: verdana;
     font-size: 9px;
     color: #5A1400;
     display: table;
 }
-#footer-designedby span{
-    float: left;
-    padding-left: 20px;
-    padding-right: 10px;
+#footer-designedby a{
+    font-size: 9px;
+    font-family: verdana;
+    color: #5A1400;
 }
 
 
 #slot-title{
-    margin-top: 20px;
-/*    border: 1px #ddd solid;*/
+    margin-top: 8px;
     height: 46px;
     background-color: #C46896;
-    background-image: url('/images/quienes-somos.png');
+    background-image: url('/images/bg-slot.png');
+}
+#slot-title span{
+    font-size: 21px;
+    color: white;
+    margin-left: 28px;
+    padding-top: 20px;
+    line-height: 46px;
 }
 
 #container-left{
     margin-top: 5px;
     vertical-align: top;
     display: inline-block;
-    width: 225px;
-    min-height: 550px;
+    width: 230px;
 }
 #container-center{
     margin-top: 5px;
     display: inline-block;
     vertical-align: top;
     width: 515px;
-    min-height: 550px;
 }
 #container-right{
-    margin-top: 20px;
+    margin-top: 8px;
     vertical-align: top;
     display: inline-block;
     width: 225px;
-    min-height: 550px;
 }
 #promo-header{
     height: 46px;
     background-color: #5A1400;
     background-image: url('/images/promo-header.png');
-    background-size: contain;
+    background-position: right top;
     position: relative;
     z-index: 1;
 }
@@ -161,18 +164,19 @@ a.homepage-menu:hover{
     width: 675px;
 }
 .promo-picture-container{
-    background-image: url('/images/foto-quienes-somos.png');
+/*    background-image: url('/images/foto-quienes-somos.png');*/
     width: 225px;
     height: 300px;
     float: left;
 }
 #promo-footer{
-    top: -28px;
+    top: -31px;
     height: 183px;
     background-image: url('/images/promo-footer-alpha.png');
     background-size: contain;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 #promo-footer a{
     font-size: 12px;
@@ -181,15 +185,27 @@ a.homepage-menu:hover{
     cursor: pointer;
     margin-right: 10px;
 }
-#promo-text{
-    padding: 15px;
+#promo-container-text{
+    position: relative;
+    left: 0px;
+    height: 152px;
+    width: 675px;    
+}
+.promo-text{
     color: white;
     font-size: 14px;
+    width: 225px;
+    height: 152px;
+    float: left;
 }
-#promo-text b{
+.promo-text-desc{
+    padding: 15px;
+}
+.promo-text b{
     margin-right: 10px;
     float: right;
 }
+
 #main-container{
     background-color: white;
     margin-left: auto;
@@ -240,18 +256,21 @@ a.homepage-menu:hover{
 }
 
 .category-menu{
-    width: 218px;
+    width: 230px;
 }
 .category-menu a{
     font-family: verdana, arial;
     font-weight: bold;
-    font-size: 13px;
-    padding-left: 10px;
+    font-size: 12px;
+
     display: block;
     color: #C46896;
     font-weight: bold;
     text-decoration: none;
-    margin: 10px;
+
+    margin-top: 10px;
+    margin-left: 27px;
+    
     vertical-align: middle;
 }
 .category-menu a:hover{
@@ -268,7 +287,15 @@ a.homepage-menu:hover{
     color: #666;
     display: block;
     font-size: 11px;
+    line-height: 20px;
 }
+.page-description p{
+    color: #5A1400;
+}
+.page-description p b{
+    color: #C46896;
+}
+
 
 #product-list{
     display: none;
