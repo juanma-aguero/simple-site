@@ -22,7 +22,7 @@
                 <th>Línea</th>
                 <th>Nombre</th>
                 <th>Descripcion corta</th>
-                <th>Precio</th>
+                <th>Presentación</th>
                 <th></th>
             </tr>
         </thead>
@@ -32,7 +32,7 @@
                     <td><?php echo $product->getProductLine() ?></td>
                     <td><?php echo $product->getName() ?></td>
                     <td><?php echo $product->getDescriptionShort() ?></td>
-                    <td><?php echo $product->getPrice() ?></td>
+                    <td><?php echo $product->getSize() ?></td>
                     <td><a href="<?php echo url_for('product/show?id=' . $product->getId()) ?>">Ver</a></td>
                 </tr>
             <?php endforeach; ?>

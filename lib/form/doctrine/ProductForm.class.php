@@ -14,16 +14,13 @@ class ProductForm extends BaseProductForm {
         
         // labels
         $this->getWidgetSchema()->setLabels(array(
-            'product_category_id' => 'Categoria',
-            'name' => 'nombre',
+            'product_line_id' => 'Línea de producto',
+            'name' => 'Nombre',
             'description_short' => 'Descripcion corta',
-            'description_long' => 'Descripcion larga',
-            'price' => 'Precio',
+            'size' => 'Presentación',
             'image' => 'Imagen'
         ));
         
-        // adding light rich text editor
-        $this->widgetSchema['description_long']->setAttribute('class', 'rich-text-area');
 
         // Image setup
         $this->widgetSchema['image'] = new sfWidgetFormInputFileEditable(array(

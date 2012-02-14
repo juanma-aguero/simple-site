@@ -31,12 +31,12 @@ body{
 .homepage-menu{
     position: relative;
     margin-top: 155px;
-    margin-left: 380px;
+    margin-left: 390px;
     float: left;
     width: 550px;
     vertical-align: middle;
     text-align: center;
-/*    border: 1px black solid;*/
+    /*    border: 1px black solid;*/
 }
 .homepage-menu div{
     text-align: center;
@@ -45,13 +45,14 @@ body{
     line-height: 20px;
     font-size: 13px;
     font-weight: bold;
-/*    border: 1px black solid;*/
+    /*    border: 1px black solid;*/
 }
 
 .homepage-menu a{
     margin: auto;
     text-decoration: none;
-    color: #C46896;
+    /*    color: #C46896;*/
+    color: white;
 }
 .homepage-menu b{
     color: #5A1400;
@@ -164,7 +165,7 @@ a.homepage-menu:hover{
     width: 675px;
 }
 .promo-picture-container{
-/*    background-image: url('/images/foto-quienes-somos.png');*/
+    /*    background-image: url('/images/foto-quienes-somos.png');*/
     width: 225px;
     height: 300px;
     float: left;
@@ -199,10 +200,17 @@ a.homepage-menu:hover{
     float: left;
 }
 .promo-text-desc{
+    font-size: 11px;
     padding: 15px;
 }
+.promo-text-desc h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 .promo-text b{
+    font-size: 14px;
     margin-right: 10px;
+    margin-top: 5px;
     float: right;
 }
 
@@ -214,40 +222,37 @@ a.homepage-menu:hover{
 }
 
 .product{
-    background-color: white;
-    width: 455px;
-    height: 200px;
-    font-size: 10px;
+    height: 230px;
+    font-size: 12px;
+    color: #5A1400;
 }
 .product-description{
-    margin-top: 10px;
+    margin-top: 15px;
     float: right;
-    width: 150px;
+    width: 300px;
+    margin-right: 25px;
 }
 .product-description a{
-    color: #06799F;
-    font-size: 12px;
+    color: #5A1400 !important;
     font-weight: bold;
     text-decoration: none;
 }
-.product-description a:hover{
-    text-decoration: underline;
-}
+
 .product-description p{
     word-wrap: break-word;
-    font-size: 10px;
-    width: 147px;
-    text-indent: 2px;
+    width: 100%;
 }
 .product-description span{
     display: block;
-    font-size: 12px;
+}
+.product-presentation{
+    color: #C46896;
 }
 .product-image{
     margin-top: 15px;
-    margin-left: 2px;
+    margin-left: 20px;
     float: left;
-    width: 300px;
+    width: 200px;
 }
 .product-image a{
 }
@@ -270,7 +275,7 @@ a.homepage-menu:hover{
 
     margin-top: 10px;
     margin-left: 27px;
-    
+
     vertical-align: middle;
 }
 .category-menu a:hover{
@@ -304,7 +309,7 @@ a.homepage-menu:hover{
 
 
 #product-list-thumbs{
-    
+
 }
 .product-thumbs{
     float: left;
@@ -327,8 +332,6 @@ a.homepage-menu:hover{
     opacity: 0.7;
     height: 150px;
     cursor: pointer;
-    text-align: justify;
-    word-wrap: break-word;
 }
 
 /*** Content */

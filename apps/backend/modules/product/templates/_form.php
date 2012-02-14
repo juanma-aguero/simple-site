@@ -25,19 +25,11 @@
                 echo $form['description_short']->renderLabel();
                 echo $form['description_short']?>
             </div>
-            <div><?php echo $form['description_long']->renderError(); ?></div>
-            <div class="rich-text-buttons">
-                <a onclick="setMode('b')" href="#"><b>B</b>&nbsp;&nbsp;bold</a>
-                <a onclick="setMode('i')" href="#"><i>I</i>&nbsp;&nbsp;italic</a>
-                <label>light Rich text</label>
+            <div><?php
+                echo $form['size']->renderError();
+                echo $form['size']->renderLabel();
+                echo $form['size']?>
             </div>
-            <?php echo $form['description_long'] ?>
-            <br/>
-            <label>Preview</label>
-            <br/>
-            <div class="rich-text-div"></div>
-            
-            <div><?php echo $form['price']->renderRow() ?></div>
             <div><?php echo $form['image']->renderRow() ?></div>
 
         </div>

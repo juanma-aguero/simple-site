@@ -7,14 +7,11 @@
  * 
  * @property string $name
  * @property string $description
- * @property string $image
  * 
  * @method string  getName()        Returns the current record's "name" value
  * @method string  getDescription() Returns the current record's "description" value
- * @method string  getImage()       Returns the current record's "image" value
  * @method Service setName()        Sets the current record's "name" value
  * @method Service setDescription() Sets the current record's "description" value
- * @method Service setImage()       Sets the current record's "image" value
  * 
  * @package    simple-site
  * @subpackage model
@@ -35,10 +32,6 @@ abstract class BaseService extends sfDoctrineRecord
              'type' => 'string',
              'notnull' => true,
              'length' => 1000,
-             ));
-        $this->hasColumn('image', 'string', 255, array(
-             'type' => 'string',
-             'length' => 255,
              ));
     }
 

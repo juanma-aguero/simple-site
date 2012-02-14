@@ -13,22 +13,20 @@ abstract class BaseProductFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'product_category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProductCategory'), 'add_empty' => true)),
       'product_line_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProductLine'), 'add_empty' => true)),
+      'product_category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('ProductCategory'), 'add_empty' => true)),
       'name'                => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'description_short'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'description_long'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'price'               => new sfWidgetFormFilterInput(),
+      'size'                => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'image'               => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
-      'product_category_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('ProductCategory'), 'column' => 'id')),
       'product_line_id'     => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('ProductLine'), 'column' => 'id')),
+      'product_category_id' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('ProductCategory'), 'column' => 'id')),
       'name'                => new sfValidatorPass(array('required' => false)),
       'description_short'   => new sfValidatorPass(array('required' => false)),
-      'description_long'    => new sfValidatorPass(array('required' => false)),
-      'price'               => new sfValidatorPass(array('required' => false)),
+      'size'                => new sfValidatorPass(array('required' => false)),
       'image'               => new sfValidatorPass(array('required' => false)),
     ));
 
@@ -50,12 +48,11 @@ abstract class BaseProductFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'                  => 'Number',
-      'product_category_id' => 'ForeignKey',
       'product_line_id'     => 'ForeignKey',
+      'product_category_id' => 'ForeignKey',
       'name'                => 'Text',
       'description_short'   => 'Text',
-      'description_long'    => 'Text',
-      'price'               => 'Text',
+      'size'                => 'Text',
       'image'               => 'Text',
     );
   }

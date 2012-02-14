@@ -15,13 +15,11 @@ abstract class BaseServiceFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'name'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'description' => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'image'       => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
       'name'        => new sfValidatorPass(array('required' => false)),
       'description' => new sfValidatorPass(array('required' => false)),
-      'image'       => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('service_filters[%s]');
@@ -44,7 +42,6 @@ abstract class BaseServiceFormFilter extends BaseFormFilterDoctrine
       'id'          => 'Number',
       'name'        => 'Text',
       'description' => 'Text',
-      'image'       => 'Text',
     );
   }
 }

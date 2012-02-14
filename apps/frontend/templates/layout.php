@@ -3,13 +3,14 @@
     <head>
         <?php include_http_metas() ?>
         <?php include_metas() ?>
+        <meta property="fb:app_id" content="284399558270084" /> 
         <meta property="og:locale:alternate" content="es_LA" />
         <meta property="og:title" content="Romina Crugo"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="http://www.rominacrugo.com.ar/"/>
-        <meta property="og:image" content="http://rominacrugo.com.ar/images/rominacrugo.png"/>
+        <meta property="og:image" content="http://rominacrugo.com.ar/images/flor.png"/>
         <meta property="og:site_name" content="RominaCrugo"/>
-        <meta property="fb:admins" content="1118611173"/>
+        <meta property="fb:admins" content="1118611173,1218548504"/>
         <meta property="og:description"
               content="Romina Crugo, creadora de spa y belleza es especialista en tratamientos para la piel, el cuidado de la estética facial y corporal, el relax y el bienestar."/>
               <?php include_title() ?>
@@ -18,26 +19,26 @@
         <?php include_javascripts() ?>
     </head>
     <body>
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=284399558270084";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
         <!-- header -->
         <div id="header">
             <div id="header-main-content">
                 <div class="homepage-menu">
                     <div class="homepage-menu-item">
-                        <a href="<?php echo url_for("@homepage") ?>"><b>quienes</b> somos</a>
+                        <a href="<?php echo url_for("@homepage") ?>">quienes somos</a>
                     </div>
                     <div class="homepage-menu-item">
-                        <a href="<?php echo url_for("servicio/index") ?>"><b>nuestros</b> servicios</a>
+                        <a href="<?php echo url_for("servicio/index") ?>">nuestros servicios</a>
                     </div>
                     <div class="homepage-menu-item">
-                        <a href="<?php echo url_for("producto/linea?id=1") ?>"><b>nuestros</b> productos</a>
+                        <a href="<?php echo url_for("producto/linea?id=1") ?>">nuestros productos</a>
                     </div>
                 </div>
             </div>
@@ -87,34 +88,35 @@
                         <div id="promo-container-text">
                             <div class="promo-text" >
                                 <div class="promo-text-desc">
-                                <h4>Spa para 2 personas</h4>
-                                Masaje relajante, mascarilla
+                                <h4>Pulido corporal +<br/>
+                                    Crema para celulitis +<br/>
+                                    Afirmante</h4>
                                 <br/>
-                                <br/>
-                                <b>$260</b>
+                                <b>$100</b>
                                 </div>
                             </div>
                             <div class="promo-text" >
                                 <div class="promo-text-desc">
-                                <h4>Spa para 2 personas</h4>
-                                Masaje relajante
+                                <h4>Leche de limpieza +<br/>
+                                    Bruma hidratante +<br/>
+                                    Crema antiage</h4>
                                 <br/>
-                                <br/>
-                                <b>$195</b>
+                                <b>$110</b>
                                 </div>
                             </div>
                             <div class="promo-text" >
                                 <div class="promo-text-desc">
-                                <h4>Spa para 1 persona</h4>
-                                Masaje relajante, mascarilla
-                                <br/>
-                                <br/>
-                                <b>$200</b>
+                                <h4>Spa eventos especiales</h4>
+                                Limpieza de cutis con radiofrecuencia +<br/>
+                                masaje relajante a elección + <br/>
+                                mascarilla corporales y faciales +<br/>
+                                belleza de manos y pies +<br/>
+                                <b>x5 amigas $750</b>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="fb-like" data-href="http://www.rominacrugo.com.ar" data-send="false" data-layout="box_count" data-width="300" data-show-faces="true" data-font="verdana"></div>
+<div class="fb-like-box" data-href="http://www.facebook.com/pages/Romina-Crugo/221426034604715" data-width="225" data-height="200" data-show-faces="true" data-stream="false" data-header="false"></div>
                     <br/>
                     <br/>
                 </div>

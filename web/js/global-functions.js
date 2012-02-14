@@ -30,7 +30,7 @@ $(document).ready(function(){
 var timer = 0;
 var promoCount = 3;
 var promoWidth = 225;
-var promoTime = 3000;
+var promoTime = 4000;
 var promoRunning = true;
 var timerID;
 
@@ -103,7 +103,8 @@ function showProduct( id, name ){
                 $(this).dialog("close");
             }
         }],
-        width: 700
+        width: 600
     });
+    $('.ui-dialog :button').blur();
     
 }

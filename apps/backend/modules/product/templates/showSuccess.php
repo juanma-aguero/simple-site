@@ -13,12 +13,8 @@
             <td><?php echo $product->getDescriptionShort() ?></td>
         </tr>
         <tr>
-            <th>Descripcion larga</th>
-            <td><?php echo $product->getDescriptionLong() ?></td>
-        </tr>
-        <tr>
-            <th>Precio</th>
-            <td><?php echo $product->getPrice() ?></td>
+            <th>Presentaci&oacute;n</th>
+            <td><?php echo $product->getSize() ?></td>
         </tr>
         <tr>
             <th>Imagen</th>

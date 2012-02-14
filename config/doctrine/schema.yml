@@ -16,8 +16,7 @@ Product:
     product_category_id: { type: integer }
     name: { type: string(255), notnull: true }
     description_short: { type: string(500), notnull: true }
-    description_long: { type: string(1000), notnull: true }
-    price: { type: string(255) }
+    size: { type: string(255), notnull: true }
     image: { type: string(255) }
   relations:
     ProductCategory: { local: product_category_id, foreign: id }
@@ -37,4 +36,3 @@ Service:
   columns:
     name: { type: string(255), notnull: true }
     description: { type: string(1000), notnull: true }
-    image: { type: string(255) }

@@ -282,3 +282,1060 @@ Nov 18 20:05:38 symfony [info] {sfWebDebugLogger} Factories 16.93 ms (1)
 Nov 18 20:05:38 symfony [info] {sfWebDebugLogger} Action "home/login" 0.08 ms (1)
 Nov 18 20:05:38 symfony [info] {sfWebDebugLogger} View "Success" for "home/login" 6.33 ms (1)
 Nov 18 20:05:38 symfony [info] {sfWebResponse} Send content (30067 o)
+Dec 02 20:35:22 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 02 20:35:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:35:22 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 02 20:35:22 symfony [info] {sfBasicSecurityFilter} Action "home/index" requires authentication, forwarding to "home/login"
+Dec 02 20:35:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:35:22 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 02 20:35:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:35:22 symfony [info] {homeActions} Call "homeActions->executeLogin()"
+Dec 02 20:35:22 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/home/templates/loginSuccess.php"
+Dec 02 20:35:22 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 02 20:35:22 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 02 20:35:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:35:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:35:22 symfony [info] {sfWebDebugLogger} Configuration 65.18 ms (12)
+Dec 02 20:35:22 symfony [info] {sfWebDebugLogger} Factories 75.73 ms (1)
+Dec 02 20:35:22 symfony [info] {sfWebDebugLogger} Action "home/login" 0.09 ms (1)
+Dec 02 20:35:22 symfony [info] {sfWebDebugLogger} View "Success" for "home/login" 8.71 ms (1)
+Dec 02 20:35:22 symfony [info] {sfWebResponse} Send content (29920 o)
+Dec 02 20:35:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/validateLogin with parameters array (  'module' => 'home',  'action' => 'validateLogin',)
+Dec 02 20:35:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:35:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:35:27 symfony [info] {homeActions} Call "homeActions->executeValidateLogin()"
+Dec 02 20:35:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:35:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u WHERE (u.username = ? AND u.password = ?) - (juanma, juanma)
+Dec 02 20:35:27 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/home/login"
+Dec 02 20:35:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:35:27 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/home/login"
+Dec 02 20:35:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (8)
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} Factories 17.07 ms (1)
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} Action "home/validateLogin" 22.84 ms (1)
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:35:27 symfony [info] {sfWebResponse} Send content (119 o)
+Dec 02 20:35:27 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/login with parameters array (  'module' => 'home',  'action' => 'login',)
+Dec 02 20:35:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:35:27 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 02 20:35:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:35:27 symfony [info] {homeActions} Call "homeActions->executeLogin()"
+Dec 02 20:35:27 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/home/templates/loginSuccess.php"
+Dec 02 20:35:27 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 02 20:35:27 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 02 20:35:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:35:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} Configuration 0.84 ms (9)
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} Factories 16.75 ms (1)
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} Action "home/login" 0.09 ms (1)
+Dec 02 20:35:27 symfony [info] {sfWebDebugLogger} View "Success" for "home/login" 5.43 ms (1)
+Dec 02 20:35:27 symfony [info] {sfWebResponse} Send content (28761 o)
+Dec 02 20:37:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Dec 02 20:37:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:20 symfony [info] {userActions} Call "userActions->executeIndex()"
+Dec 02 20:37:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:37:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u - ()
+Dec 02 20:37:20 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/indexSuccess.php"
+Dec 02 20:37:20 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:20 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:37:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:20 symfony [info] {sfWebDebugLogger} Configuration 72.31 ms (9)
+Dec 02 20:37:20 symfony [info] {sfWebDebugLogger} Factories 61.71 ms (1)
+Dec 02 20:37:20 symfony [info] {sfWebDebugLogger} Action "user/index" 20.99 ms (1)
+Dec 02 20:37:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:37:20 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 10.33 ms (1)
+Dec 02 20:37:20 symfony [info] {sfWebResponse} Send content (31730 o)
+Dec 02 20:37:24 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Dec 02 20:37:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:24 symfony [info] {userActions} Call "userActions->executeIndex()"
+Dec 02 20:37:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:37:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u - ()
+Dec 02 20:37:25 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/indexSuccess.php"
+Dec 02 20:37:25 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:25 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:37:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:25 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (9)
+Dec 02 20:37:25 symfony [info] {sfWebDebugLogger} Factories 19.24 ms (1)
+Dec 02 20:37:25 symfony [info] {sfWebDebugLogger} Action "user/index" 17.98 ms (1)
+Dec 02 20:37:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:37:25 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 7.88 ms (1)
+Dec 02 20:37:25 symfony [info] {sfWebResponse} Send content (31759 o)
+Dec 02 20:37:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Dec 02 20:37:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:29 symfony [info] {userActions} Call "userActions->executeNew()"
+Dec 02 20:37:29 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/newSuccess.php"
+Dec 02 20:37:29 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/user/templates/_form.php"
+Dec 02 20:37:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:37:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.name AS u__name FROM user_type u - ()
+Dec 02 20:37:29 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:29 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:37:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:29 symfony [info] {sfWebDebugLogger} Configuration 1.15 ms (9)
+Dec 02 20:37:29 symfony [info] {sfWebDebugLogger} Factories 17.30 ms (1)
+Dec 02 20:37:29 symfony [info] {sfWebDebugLogger} Action "user/new" 13.72 ms (1)
+Dec 02 20:37:29 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 21.68 ms (1)
+Dec 02 20:37:29 symfony [info] {sfWebDebugLogger} Partial "user/_form" 13.85 ms (1)
+Dec 02 20:37:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:37:29 symfony [info] {sfWebResponse} Send content (36061 o)
+Dec 02 20:37:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /userType/new with parameters array (  'module' => 'userType',  'action' => 'new',)
+Dec 02 20:37:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:36 symfony [info] {userTypeActions} Call "userTypeActions->executeNew()"
+Dec 02 20:37:36 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/newSuccess.php"
+Dec 02 20:37:36 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/_form.php"
+Dec 02 20:37:36 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:36 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:37:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:36 symfony [info] {sfWebDebugLogger} Configuration 10.94 ms (10)
+Dec 02 20:37:36 symfony [info] {sfWebDebugLogger} Factories 16.99 ms (1)
+Dec 02 20:37:36 symfony [info] {sfWebDebugLogger} Action "userType/new" 10.96 ms (1)
+Dec 02 20:37:36 symfony [info] {sfWebDebugLogger} View "Success" for "userType/new" 11.08 ms (1)
+Dec 02 20:37:36 symfony [info] {sfWebDebugLogger} Partial "userType/_form" 2.31 ms (1)
+Dec 02 20:37:36 symfony [info] {sfWebResponse} Send content (32459 o)
+Dec 02 20:37:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /userType/create with parameters array (  'module' => 'userType',  'action' => 'create',)
+Dec 02 20:37:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:41 symfony [info] {userTypeActions} Call "userTypeActions->executeCreate()"
+Dec 02 20:37:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:37:41 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO user_type (name) VALUES (?) - (administrador)
+Dec 02 20:37:41 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/userType/edit/id/1"
+Dec 02 20:37:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:37:41 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/userType/edit/id/1"
+Dec 02 20:37:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (8)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Factories 17.15 ms (1)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Action "userType/create" 60.46 ms (1)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:37:41 symfony [info] {sfWebResponse} Send content (127 o)
+Dec 02 20:37:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /userType/edit/id/1 with parameters array (  'module' => 'userType',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:37:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:41 symfony [info] {userTypeActions} Call "userTypeActions->executeEdit()"
+Dec 02 20:37:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:37:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name FROM user_type u WHERE (u.id = ?) LIMIT 1 - (1)
+Dec 02 20:37:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/editSuccess.php"
+Dec 02 20:37:41 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/_form.php"
+Dec 02 20:37:41 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:37:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (9)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Factories 16.92 ms (1)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Action "userType/edit" 31.13 ms (1)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} View "Success" for "userType/edit" 9.96 ms (1)
+Dec 02 20:37:41 symfony [info] {sfWebDebugLogger} Partial "userType/_form" 3.32 ms (1)
+Dec 02 20:37:41 symfony [info] {sfWebResponse} Send content (36184 o)
+Dec 02 20:37:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /userType with parameters array (  'module' => 'userType',  'action' => 'index',)
+Dec 02 20:37:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:43 symfony [info] {userTypeActions} Call "userTypeActions->executeIndex()"
+Dec 02 20:37:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:37:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.name AS u__name FROM user_type u - ()
+Dec 02 20:37:43 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/indexSuccess.php"
+Dec 02 20:37:43 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:43 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:37:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:43 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (9)
+Dec 02 20:37:43 symfony [info] {sfWebDebugLogger} Factories 17.08 ms (1)
+Dec 02 20:37:43 symfony [info] {sfWebDebugLogger} Action "userType/index" 17.25 ms (1)
+Dec 02 20:37:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:37:43 symfony [info] {sfWebDebugLogger} View "Success" for "userType/index" 14.19 ms (1)
+Dec 02 20:37:43 symfony [info] {sfWebResponse} Send content (31676 o)
+Dec 02 20:37:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /userType/new with parameters array (  'module' => 'userType',  'action' => 'new',)
+Dec 02 20:37:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:37:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:37:48 symfony [info] {userTypeActions} Call "userTypeActions->executeNew()"
+Dec 02 20:37:48 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/newSuccess.php"
+Dec 02 20:37:48 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/_form.php"
+Dec 02 20:37:48 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:48 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:37:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:37:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:37:48 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Dec 02 20:37:48 symfony [info] {sfWebDebugLogger} Factories 17.19 ms (1)
+Dec 02 20:37:48 symfony [info] {sfWebDebugLogger} Action "userType/new" 11.17 ms (1)
+Dec 02 20:37:48 symfony [info] {sfWebDebugLogger} View "Success" for "userType/new" 8.87 ms (1)
+Dec 02 20:37:48 symfony [info] {sfWebDebugLogger} Partial "userType/_form" 2.37 ms (1)
+Dec 02 20:37:48 symfony [info] {sfWebResponse} Send content (32530 o)
+Dec 02 20:38:25 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /userType with parameters array (  'module' => 'userType',  'action' => 'index',)
+Dec 02 20:38:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:38:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:38:25 symfony [info] {userTypeActions} Call "userTypeActions->executeIndex()"
+Dec 02 20:38:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:38:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.name AS u__name FROM user_type u - ()
+Dec 02 20:38:25 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/userType/templates/indexSuccess.php"
+Dec 02 20:38:25 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:25 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:38:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:38:25 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (9)
+Dec 02 20:38:25 symfony [info] {sfWebDebugLogger} Factories 19.09 ms (1)
+Dec 02 20:38:25 symfony [info] {sfWebDebugLogger} Action "userType/index" 18.78 ms (1)
+Dec 02 20:38:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Dec 02 20:38:25 symfony [info] {sfWebDebugLogger} View "Success" for "userType/index" 9.62 ms (1)
+Dec 02 20:38:25 symfony [info] {sfWebResponse} Send content (31669 o)
+Dec 02 20:38:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Dec 02 20:38:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:38:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:38:41 symfony [info] {userActions} Call "userActions->executeIndex()"
+Dec 02 20:38:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:38:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u - ()
+Dec 02 20:38:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/indexSuccess.php"
+Dec 02 20:38:41 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:38:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:38:41 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Dec 02 20:38:41 symfony [info] {sfWebDebugLogger} Factories 18.95 ms (1)
+Dec 02 20:38:41 symfony [info] {sfWebDebugLogger} Action "user/index" 20.32 ms (1)
+Dec 02 20:38:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:38:41 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 6.87 ms (1)
+Dec 02 20:38:41 symfony [info] {sfWebResponse} Send content (31801 o)
+Dec 02 20:38:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/new with parameters array (  'module' => 'user',  'action' => 'new',)
+Dec 02 20:38:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:38:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:38:42 symfony [info] {userActions} Call "userActions->executeNew()"
+Dec 02 20:38:43 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/newSuccess.php"
+Dec 02 20:38:43 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/user/templates/_form.php"
+Dec 02 20:38:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:38:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.name AS u__name FROM user_type u - ()
+Dec 02 20:38:43 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:43 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:38:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:38:43 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (9)
+Dec 02 20:38:43 symfony [info] {sfWebDebugLogger} Factories 20.19 ms (1)
+Dec 02 20:38:43 symfony [info] {sfWebDebugLogger} Action "user/new" 13.90 ms (1)
+Dec 02 20:38:43 symfony [info] {sfWebDebugLogger} View "Success" for "user/new" 25.76 ms (1)
+Dec 02 20:38:43 symfony [info] {sfWebDebugLogger} Partial "user/_form" 17.71 ms (1)
+Dec 02 20:38:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Dec 02 20:38:43 symfony [info] {sfWebResponse} Send content (36102 o)
+Dec 02 20:38:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/create with parameters array (  'module' => 'user',  'action' => 'create',)
+Dec 02 20:38:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:38:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:38:49 symfony [info] {userActions} Call "userActions->executeCreate()"
+Dec 02 20:38:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:38:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM user_type u WHERE u.id = ? - (1)
+Dec 02 20:38:49 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO user (user_type_id, username, password) VALUES (?, ?, ?) - (1, juanma, juanma)
+Dec 02 20:38:49 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/user/edit/id/1"
+Dec 02 20:38:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:38:49 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/user/edit/id/1"
+Dec 02 20:38:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (8)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Factories 17.13 ms (1)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Action "user/create" 72.58 ms (1)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:38:49 symfony [info] {sfWebResponse} Send content (123 o)
+Dec 02 20:38:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/edit/id/1 with parameters array (  'module' => 'user',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:38:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:38:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:38:49 symfony [info] {userActions} Call "userActions->executeEdit()"
+Dec 02 20:38:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:38:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u WHERE (u.id = ?) LIMIT 1 - (1)
+Dec 02 20:38:49 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/editSuccess.php"
+Dec 02 20:38:49 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/user/templates/_form.php"
+Dec 02 20:38:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.name AS u__name FROM user_type u - ()
+Dec 02 20:38:49 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:49 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:38:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Factories 17.06 ms (1)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Action "user/edit" 28.39 ms (1)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} View "Success" for "user/edit" 12.81 ms (1)
+Dec 02 20:38:49 symfony [info] {sfWebDebugLogger} Partial "user/_form" 6.00 ms (1)
+Dec 02 20:38:49 symfony [info] {sfWebResponse} Send content (38586 o)
+Dec 02 20:38:57 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Dec 02 20:38:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:38:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:38:57 symfony [info] {userActions} Call "userActions->executeIndex()"
+Dec 02 20:38:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:38:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u - ()
+Dec 02 20:38:57 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/indexSuccess.php"
+Dec 02 20:38:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name FROM user_type u WHERE (u.id = ?) - (1)
+Dec 02 20:38:57 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:57 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:38:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:38:57 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (9)
+Dec 02 20:38:57 symfony [info] {sfWebDebugLogger} Factories 17.26 ms (1)
+Dec 02 20:38:57 symfony [info] {sfWebDebugLogger} Action "user/index" 16.59 ms (1)
+Dec 02 20:38:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:38:57 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 14.55 ms (1)
+Dec 02 20:38:57 symfony [info] {sfWebResponse} Send content (33193 o)
+Dec 02 20:38:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/show/id/1 with parameters array (  'module' => 'user',  'action' => 'show',  'id' => '1',)
+Dec 02 20:38:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:38:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:38:59 symfony [info] {userActions} Call "userActions->executeShow()"
+Dec 02 20:38:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:38:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u WHERE (u.id = ?) LIMIT 1 - (1)
+Dec 02 20:38:59 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/showSuccess.php"
+Dec 02 20:38:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name FROM user_type u WHERE (u.id = ?) - (1)
+Dec 02 20:38:59 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:59 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:38:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:38:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:38:59 symfony [info] {sfWebDebugLogger} Configuration 1.12 ms (9)
+Dec 02 20:38:59 symfony [info] {sfWebDebugLogger} Factories 17.41 ms (1)
+Dec 02 20:38:59 symfony [info] {sfWebDebugLogger} Action "user/show" 20.60 ms (1)
+Dec 02 20:38:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:38:59 symfony [info] {sfWebDebugLogger} View "Success" for "user/show" 12.32 ms (1)
+Dec 02 20:38:59 symfony [info] {sfWebResponse} Send content (33420 o)
+Dec 02 20:39:03 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /user with parameters array (  'module' => 'user',  'action' => 'index',)
+Dec 02 20:39:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:39:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:39:03 symfony [info] {userActions} Call "userActions->executeIndex()"
+Dec 02 20:39:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:39:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u - ()
+Dec 02 20:39:03 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/user/templates/indexSuccess.php"
+Dec 02 20:39:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.name AS u__name FROM user_type u WHERE (u.id = ?) - (1)
+Dec 02 20:39:03 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:39:03 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:39:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:39:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:39:03 symfony [info] {sfWebDebugLogger} Configuration 1.17 ms (9)
+Dec 02 20:39:03 symfony [info] {sfWebDebugLogger} Factories 17.64 ms (1)
+Dec 02 20:39:03 symfony [info] {sfWebDebugLogger} Action "user/index" 19.33 ms (1)
+Dec 02 20:39:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:39:03 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 18.11 ms (1)
+Dec 02 20:39:03 symfony [info] {sfWebResponse} Send content (33193 o)
+Dec 02 20:39:07 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/login with parameters array (  'module' => 'home',  'action' => 'login',)
+Dec 02 20:39:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:39:07 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 02 20:39:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:39:07 symfony [info] {homeActions} Call "homeActions->executeLogin()"
+Dec 02 20:39:07 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/home/templates/loginSuccess.php"
+Dec 02 20:39:07 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 02 20:39:07 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 02 20:39:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:39:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:39:07 symfony [info] {sfWebDebugLogger} Configuration 12.17 ms (10)
+Dec 02 20:39:07 symfony [info] {sfWebDebugLogger} Factories 17.31 ms (1)
+Dec 02 20:39:07 symfony [info] {sfWebDebugLogger} Action "home/login" 0.11 ms (1)
+Dec 02 20:39:07 symfony [info] {sfWebDebugLogger} View "Success" for "home/login" 8.37 ms (1)
+Dec 02 20:39:07 symfony [info] {sfWebResponse} Send content (28737 o)
+Dec 02 20:39:16 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/validateLogin with parameters array (  'module' => 'home',  'action' => 'validateLogin',)
+Dec 02 20:39:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:39:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:39:16 symfony [info] {homeActions} Call "homeActions->executeValidateLogin()"
+Dec 02 20:39:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:39:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u WHERE (u.username = ? AND u.password = ?) - (juanma, juanma)
+Dec 02 20:39:16 symfony [info] {myUser} User is authenticated
+Dec 02 20:39:16 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/"
+Dec 02 20:39:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:39:16 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/"
+Dec 02 20:39:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} Configuration 0.77 ms (8)
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} Factories 17.37 ms (1)
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} Action "home/validateLogin" 20.51 ms (1)
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Dec 02 20:39:16 symfony [info] {sfWebResponse} Send content (109 o)
+Dec 02 20:39:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 02 20:39:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:39:16 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 02 20:39:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:39:16 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Dec 02 20:39:16 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/home/templates/indexSuccess.php"
+Dec 02 20:39:16 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:39:16 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:39:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:39:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} Factories 16.87 ms (1)
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} Action "home/index" 0.09 ms (1)
+Dec 02 20:39:16 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 5.62 ms (1)
+Dec 02 20:39:16 symfony [info] {sfWebResponse} Send content (29082 o)
+Dec 02 20:39:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Dec 02 20:39:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:39:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:39:28 symfony [info] {productActions} Call "productActions->executeIndex()"
+Dec 02 20:39:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:39:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Dec 02 20:39:28 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/indexSuccess.php"
+Dec 02 20:39:28 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:39:28 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:39:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:39:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:39:28 symfony [info] {sfWebDebugLogger} Configuration 10.96 ms (10)
+Dec 02 20:39:28 symfony [info] {sfWebDebugLogger} Factories 17.36 ms (1)
+Dec 02 20:39:28 symfony [info] {sfWebDebugLogger} Action "product/index" 17.51 ms (1)
+Dec 02 20:39:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Dec 02 20:39:28 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 8.61 ms (1)
+Dec 02 20:39:28 symfony [info] {sfWebResponse} Send content (32750 o)
+Dec 02 20:39:31 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Dec 02 20:39:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:39:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:39:31 symfony [info] {productActions} Call "productActions->executeNew()"
+Dec 02 20:40:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Dec 02 20:40:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:40:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:40:50 symfony [info] {productActions} Call "productActions->executeNew()"
+Dec 02 20:40:50 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/newSuccess.php"
+Dec 02 20:40:50 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:40:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:40:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:40:50 symfony [err] {InvalidArgumentException} Widget "description_long" does not exist.
+Dec 02 20:40:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 02 20:40:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:40:50 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (9)
+Dec 02 20:40:50 symfony [info] {sfWebDebugLogger} Factories 17.47 ms (1)
+Dec 02 20:40:50 symfony [info] {sfWebDebugLogger} Action "product/new" 16.42 ms (1)
+Dec 02 20:40:50 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 39.87 ms (1)
+Dec 02 20:40:50 symfony [info] {sfWebDebugLogger} Partial "product/_form" 34.56 ms (1)
+Dec 02 20:40:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:42:50 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Dec 02 20:42:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:42:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:42:50 symfony [info] {productActions} Call "productActions->executeNew()"
+Dec 02 20:42:50 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/newSuccess.php"
+Dec 02 20:42:50 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:42:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:42:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:42:50 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:42:50 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:42:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:42:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:42:50 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
+Dec 02 20:42:50 symfony [info] {sfWebDebugLogger} Factories 17.12 ms (1)
+Dec 02 20:42:50 symfony [info] {sfWebDebugLogger} Action "product/new" 16.61 ms (1)
+Dec 02 20:42:50 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 24.90 ms (1)
+Dec 02 20:42:50 symfony [info] {sfWebDebugLogger} Partial "product/_form" 16.90 ms (1)
+Dec 02 20:42:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Dec 02 20:42:50 symfony [info] {sfWebResponse} Send content (38047 o)
+Dec 02 20:43:40 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /productLine with parameters array (  'module' => 'productLine',  'action' => 'index',)
+Dec 02 20:43:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:43:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:43:40 symfony [info] {productLineActions} Call "productLineActions->executeIndex()"
+Dec 02 20:43:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:43:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:43:40 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/productLine/templates/indexSuccess.php"
+Dec 02 20:43:40 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:40 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:43:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:43:40 symfony [info] {sfWebDebugLogger} Configuration 11.07 ms (10)
+Dec 02 20:43:40 symfony [info] {sfWebDebugLogger} Factories 17.38 ms (1)
+Dec 02 20:43:40 symfony [info] {sfWebDebugLogger} Action "productLine/index" 15.98 ms (1)
+Dec 02 20:43:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:43:40 symfony [info] {sfWebDebugLogger} View "Success" for "productLine/index" 8.37 ms (1)
+Dec 02 20:43:40 symfony [info] {sfWebResponse} Send content (32139 o)
+Dec 02 20:43:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productLine/new with parameters array (  'module' => 'productLine',  'action' => 'new',)
+Dec 02 20:43:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:43:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:43:41 symfony [info] {productLineActions} Call "productLineActions->executeNew()"
+Dec 02 20:43:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/productLine/templates/newSuccess.php"
+Dec 02 20:43:41 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/productLine/templates/_form.php"
+Dec 02 20:43:41 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:43:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:43:41 symfony [info] {sfWebDebugLogger} Configuration 1.00 ms (9)
+Dec 02 20:43:41 symfony [info] {sfWebDebugLogger} Factories 16.92 ms (1)
+Dec 02 20:43:41 symfony [info] {sfWebDebugLogger} Action "productLine/new" 11.31 ms (1)
+Dec 02 20:43:41 symfony [info] {sfWebDebugLogger} View "Success" for "productLine/new" 9.38 ms (1)
+Dec 02 20:43:41 symfony [info] {sfWebDebugLogger} Partial "productLine/_form" 2.70 ms (1)
+Dec 02 20:43:41 symfony [info] {sfWebResponse} Send content (33238 o)
+Dec 02 20:43:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productLine/create with parameters array (  'module' => 'productLine',  'action' => 'create',)
+Dec 02 20:43:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:43:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:43:49 symfony [info] {productLineActions} Call "productLineActions->executeCreate()"
+Dec 02 20:43:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:43:49 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO product_line (name, description) VALUES (?, ?) - (Romina Crugo, alguna)
+Dec 02 20:43:49 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/productLine/edit/id/1"
+Dec 02 20:43:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:43:49 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/productLine/edit/id/1"
+Dec 02 20:43:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (8)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Factories 17.25 ms (1)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Action "productLine/create" 79.02 ms (1)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:43:49 symfony [info] {sfWebResponse} Send content (130 o)
+Dec 02 20:43:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /productLine/edit/id/1 with parameters array (  'module' => 'productLine',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:43:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:43:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:43:49 symfony [info] {productLineActions} Call "productLineActions->executeEdit()"
+Dec 02 20:43:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:43:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:43:49 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/productLine/templates/editSuccess.php"
+Dec 02 20:43:49 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/productLine/templates/_form.php"
+Dec 02 20:43:49 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:49 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:43:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (9)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Factories 16.94 ms (1)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Action "productLine/edit" 24.64 ms (1)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} View "Success" for "productLine/edit" 13.00 ms (1)
+Dec 02 20:43:49 symfony [info] {sfWebDebugLogger} Partial "productLine/_form" 5.87 ms (1)
+Dec 02 20:43:49 symfony [info] {sfWebResponse} Send content (37055 o)
+Dec 02 20:43:51 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Dec 02 20:43:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:43:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:43:51 symfony [info] {productActions} Call "productActions->executeIndex()"
+Dec 02 20:43:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:43:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Dec 02 20:43:51 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/indexSuccess.php"
+Dec 02 20:43:51 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:51 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:43:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:43:51 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Dec 02 20:43:51 symfony [info] {sfWebDebugLogger} Factories 17.15 ms (1)
+Dec 02 20:43:51 symfony [info] {sfWebDebugLogger} Action "product/index" 16.16 ms (1)
+Dec 02 20:43:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:43:51 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 6.34 ms (1)
+Dec 02 20:43:51 symfony [info] {sfWebResponse} Send content (32767 o)
+Dec 02 20:43:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Dec 02 20:43:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:43:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:43:53 symfony [info] {productActions} Call "productActions->executeNew()"
+Dec 02 20:43:53 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/newSuccess.php"
+Dec 02 20:43:53 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:43:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:43:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:43:53 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:53 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:43:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:43:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:43:53 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (9)
+Dec 02 20:43:53 symfony [info] {sfWebDebugLogger} Factories 17.75 ms (1)
+Dec 02 20:43:53 symfony [info] {sfWebDebugLogger} Action "product/new" 16.32 ms (1)
+Dec 02 20:43:53 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 24.76 ms (1)
+Dec 02 20:43:53 symfony [info] {sfWebDebugLogger} Partial "product/_form" 17.02 ms (1)
+Dec 02 20:43:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 02 20:43:53 symfony [info] {sfWebResponse} Send content (38054 o)
+Dec 02 20:44:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Dec 02 20:44:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:44:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:44:08 symfony [info] {productActions} Call "productActions->executeCreate()"
+Dec 02 20:44:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:44:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_line p WHERE p.id = ? - (1)
+Dec 02 20:44:08 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO product (product_line_id, name, description_short, size, image) VALUES (?, ?, ?, ?, ?) - (1, sdsds, ssds, sdsds, )
+Dec 02 20:44:08 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:44:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:44:08 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:44:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (8)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Factories 17.16 ms (1)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Action "product/create" 72.08 ms (1)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:44:08 symfony [info] {sfWebResponse} Send content (126 o)
+Dec 02 20:44:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:44:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:44:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:44:08 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 20:44:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:44:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:44:08 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 20:44:08 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:44:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:44:08 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:44:08 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:44:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:44:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Factories 17.15 ms (1)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Action "product/edit" 30.33 ms (1)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 13.31 ms (1)
+Dec 02 20:44:08 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.44 ms (1)
+Dec 02 20:44:08 symfony [info] {sfWebResponse} Send content (41041 o)
+Dec 02 20:44:14 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Dec 02 20:44:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:44:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:44:14 symfony [info] {productActions} Call "productActions->executeIndex()"
+Dec 02 20:44:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:44:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Dec 02 20:44:14 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/indexSuccess.php"
+Dec 02 20:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 02 20:44:14 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "price" on "Product"
+Dec 02 20:44:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 02 20:44:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:44:14 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Dec 02 20:44:14 symfony [info] {sfWebDebugLogger} Factories 17.23 ms (1)
+Dec 02 20:44:14 symfony [info] {sfWebDebugLogger} Action "product/index" 16.18 ms (1)
+Dec 02 20:44:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:44:14 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 44.19 ms (1)
+Dec 02 20:44:48 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Dec 02 20:44:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:44:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:44:48 symfony [info] {productActions} Call "productActions->executeIndex()"
+Dec 02 20:44:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:44:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Dec 02 20:44:48 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/indexSuccess.php"
+Dec 02 20:44:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 02 20:44:48 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:44:48 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:44:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:44:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:44:48 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (9)
+Dec 02 20:44:48 symfony [info] {sfWebDebugLogger} Factories 19.01 ms (1)
+Dec 02 20:44:48 symfony [info] {sfWebDebugLogger} Action "product/index" 19.16 ms (1)
+Dec 02 20:44:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:44:48 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 17.58 ms (1)
+Dec 02 20:44:48 symfony [info] {sfWebResponse} Send content (34482 o)
+Dec 02 20:44:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/show/id/1 with parameters array (  'module' => 'product',  'action' => 'show',  'id' => '1',)
+Dec 02 20:44:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:44:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:44:55 symfony [info] {productActions} Call "productActions->executeShow()"
+Dec 02 20:44:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:44:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:44:55 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/showSuccess.php"
+Dec 02 20:44:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 02 20:44:55 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "description_long" on "Product"
+Dec 02 20:44:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Dec 02 20:44:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:44:55 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Dec 02 20:44:55 symfony [info] {sfWebDebugLogger} Factories 17.15 ms (1)
+Dec 02 20:44:55 symfony [info] {sfWebDebugLogger} Action "product/show" 19.17 ms (1)
+Dec 02 20:44:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:44:55 symfony [info] {sfWebDebugLogger} View "Success" for "product/show" 42.47 ms (1)
+Dec 02 20:45:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/show/id/1 with parameters array (  'module' => 'product',  'action' => 'show',  'id' => '1',)
+Dec 02 20:45:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:45:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:45:33 symfony [info] {productActions} Call "productActions->executeShow()"
+Dec 02 20:45:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:45:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:45:33 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/showSuccess.php"
+Dec 02 20:45:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 02 20:45:33 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:45:33 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:45:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:45:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:45:33 symfony [info] {sfWebDebugLogger} Configuration 1.83 ms (9)
+Dec 02 20:45:33 symfony [info] {sfWebDebugLogger} Factories 33.73 ms (1)
+Dec 02 20:45:33 symfony [info] {sfWebDebugLogger} Action "product/show" 40.65 ms (1)
+Dec 02 20:45:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Dec 02 20:45:33 symfony [info] {sfWebDebugLogger} View "Success" for "product/show" 23.10 ms (1)
+Dec 02 20:45:33 symfony [info] {sfWebResponse} Send content (34403 o)
+Dec 02 20:46:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/show/id/1 with parameters array (  'module' => 'product',  'action' => 'show',  'id' => '1',)
+Dec 02 20:46:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:46:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:46:24 symfony [info] {productActions} Call "productActions->executeShow()"
+Dec 02 20:46:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:46:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:46:24 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/showSuccess.php"
+Dec 02 20:46:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 02 20:46:24 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:46:24 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:46:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:46:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:46:24 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (9)
+Dec 02 20:46:24 symfony [info] {sfWebDebugLogger} Factories 17.15 ms (1)
+Dec 02 20:46:24 symfony [info] {sfWebDebugLogger} Action "product/show" 21.37 ms (1)
+Dec 02 20:46:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:46:24 symfony [info] {sfWebDebugLogger} View "Success" for "product/show" 15.67 ms (1)
+Dec 02 20:46:24 symfony [info] {sfWebResponse} Send content (34402 o)
+Dec 02 20:46:26 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:46:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:46:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:46:26 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 20:46:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:46:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:46:26 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 20:46:26 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:46:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:46:26 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:46:26 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:46:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:46:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:46:26 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (9)
+Dec 02 20:46:26 symfony [info] {sfWebDebugLogger} Factories 17.12 ms (1)
+Dec 02 20:46:26 symfony [info] {sfWebDebugLogger} Action "product/edit" 30.65 ms (1)
+Dec 02 20:46:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Dec 02 20:46:26 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 13.57 ms (1)
+Dec 02 20:46:26 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.78 ms (1)
+Dec 02 20:46:26 symfony [info] {sfWebResponse} Send content (41184 o)
+Dec 02 20:47:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/update/id/1 with parameters array (  'module' => 'product',  'action' => 'update',  'id' => '1',)
+Dec 02 20:47:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:47:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:47:09 symfony [info] {productActions} Call "productActions->executeUpdate()"
+Dec 02 20:47:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_line p WHERE p.id = ? - (1)
+Dec 02 20:47:09 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/simple-site/lib/form/doctrine/ProductForm.class.php on line 53 (unlink(/var/www/simple-site/web/uploads/): Is a directory)
+Dec 02 20:47:09 symfony [warning] {sfWebDebugLogger}  Warning at /var/www/simple-site/lib/form/doctrine/ProductForm.class.php on line 61 (unlink(/var/www/simple-site/web/uploads/thumbnails/): Is a directory)
+Dec 02 20:47:09 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE product SET image = ? WHERE id = ? - (13ed6efdfd29e185f2acabed06d8d3a1b830c8e2.jpg, 1)
+Dec 02 20:47:09 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:47:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:47:09 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:47:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (8)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Factories 17.14 ms (1)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Action "product/update" 170.19 ms (1)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Dec 02 20:47:09 symfony [info] {sfWebResponse} Send content (126 o)
+Dec 02 20:47:09 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:47:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:47:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:47:09 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 20:47:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:47:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:47:09 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 20:47:09 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:47:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:47:09 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:47:09 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:47:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:47:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (9)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Factories 16.88 ms (1)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Action "product/edit" 35.47 ms (1)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 13.67 ms (1)
+Dec 02 20:47:09 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.73 ms (1)
+Dec 02 20:47:09 symfony [info] {sfWebResponse} Send content (41539 o)
+Dec 02 20:55:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/update/id/1 with parameters array (  'module' => 'product',  'action' => 'update',  'id' => '1',)
+Dec 02 20:55:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:55:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:55:38 symfony [info] {productActions} Call "productActions->executeUpdate()"
+Dec 02 20:55:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:55:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:55:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_line p WHERE p.id = ? - (1)
+Dec 02 20:55:38 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE product SET name = ?, description_short = ? WHERE id = ? - (Leche secativa - pieles grasas, Arrastra impurezas y evita que la piel se engrase por el cebo normal de la piel. Descongestiona y mantiene la piel fresca y luminosa, sin grasitud., 1)
+Dec 02 20:55:38 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:55:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:55:38 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:55:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (8)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Factories 19.36 ms (1)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Action "product/update" 151.16 ms (1)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Dec 02 20:55:38 symfony [info] {sfWebResponse} Send content (126 o)
+Dec 02 20:55:38 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:55:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:55:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:55:38 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 20:55:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:55:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:55:38 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 20:55:38 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:55:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:55:38 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:55:38 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:55:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:55:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Factories 17.72 ms (1)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Action "product/edit" 36.43 ms (1)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 14.19 ms (1)
+Dec 02 20:55:38 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.87 ms (1)
+Dec 02 20:55:38 symfony [info] {sfWebResponse} Send content (41707 o)
+Dec 02 20:58:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:58:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:58:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:58:10 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 20:58:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:58:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:58:10 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 20:58:10 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:58:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:58:10 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:58:10 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:58:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:58:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:58:10 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
+Dec 02 20:58:10 symfony [info] {sfWebDebugLogger} Factories 17.26 ms (1)
+Dec 02 20:58:10 symfony [info] {sfWebDebugLogger} Action "product/edit" 33.74 ms (1)
+Dec 02 20:58:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:58:10 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 13.88 ms (1)
+Dec 02 20:58:10 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.68 ms (1)
+Dec 02 20:58:10 symfony [info] {sfWebResponse} Send content (41713 o)
+Dec 02 20:58:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:58:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:58:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:58:40 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 20:58:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:58:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:58:40 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 20:58:40 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:58:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:58:40 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:58:40 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:58:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:58:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:58:40 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Dec 02 20:58:40 symfony [info] {sfWebDebugLogger} Factories 19.03 ms (1)
+Dec 02 20:58:40 symfony [info] {sfWebDebugLogger} Action "product/edit" 36.81 ms (1)
+Dec 02 20:58:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:58:40 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 14.85 ms (1)
+Dec 02 20:58:40 symfony [info] {sfWebDebugLogger} Partial "product/_form" 7.13 ms (1)
+Dec 02 20:58:40 symfony [info] {sfWebResponse} Send content (41714 o)
+Dec 02 20:59:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/update/id/1 with parameters array (  'module' => 'product',  'action' => 'update',  'id' => '1',)
+Dec 02 20:59:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:59:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:59:21 symfony [info] {productActions} Call "productActions->executeUpdate()"
+Dec 02 20:59:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:59:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:59:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_line p WHERE p.id = ? - (1)
+Dec 02 20:59:21 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE product SET size = ? WHERE id = ? - (150 gr, 1)
+Dec 02 20:59:21 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:59:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 20:59:21 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/product/edit/id/1"
+Dec 02 20:59:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (8)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Factories 17.32 ms (1)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Action "product/update" 88.18 ms (1)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Dec 02 20:59:21 symfony [info] {sfWebResponse} Send content (126 o)
+Dec 02 20:59:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/1 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '1',)
+Dec 02 20:59:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 20:59:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 20:59:21 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 20:59:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 20:59:21 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (1)
+Dec 02 20:59:21 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 20:59:21 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 20:59:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 20:59:21 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:59:21 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 20:59:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 20:59:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (9)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Factories 16.87 ms (1)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Action "product/edit" 30.97 ms (1)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 13.73 ms (1)
+Dec 02 20:59:21 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.75 ms (1)
+Dec 02 20:59:21 symfony [info] {sfWebResponse} Send content (41714 o)
+Dec 02 21:01:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Dec 02 21:01:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 21:01:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 21:01:37 symfony [info] {productActions} Call "productActions->executeIndex()"
+Dec 02 21:01:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 21:01:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Dec 02 21:01:37 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/indexSuccess.php"
+Dec 02 21:01:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 02 21:01:37 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 21:01:37 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 21:01:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 21:01:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 21:01:37 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Dec 02 21:01:37 symfony [info] {sfWebDebugLogger} Factories 16.90 ms (1)
+Dec 02 21:01:37 symfony [info] {sfWebDebugLogger} Action "product/index" 18.01 ms (1)
+Dec 02 21:01:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 21:01:37 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 18.76 ms (1)
+Dec 02 21:01:37 symfony [info] {sfWebResponse} Send content (34619 o)
+Dec 02 21:01:39 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Dec 02 21:01:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 21:01:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 21:01:39 symfony [info] {productActions} Call "productActions->executeNew()"
+Dec 02 21:01:39 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/newSuccess.php"
+Dec 02 21:01:39 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 21:01:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 21:01:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 21:01:39 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 21:01:39 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 21:01:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 21:01:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 21:01:39 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (9)
+Dec 02 21:01:39 symfony [info] {sfWebDebugLogger} Factories 17.20 ms (1)
+Dec 02 21:01:39 symfony [info] {sfWebDebugLogger} Action "product/new" 16.04 ms (1)
+Dec 02 21:01:39 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 20.75 ms (1)
+Dec 02 21:01:39 symfony [info] {sfWebDebugLogger} Partial "product/_form" 14.19 ms (1)
+Dec 02 21:01:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Dec 02 21:01:39 symfony [info] {sfWebResponse} Send content (38220 o)
+Dec 02 21:01:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Dec 02 21:01:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 21:01:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 21:01:52 symfony [info] {productActions} Call "productActions->executeCreate()"
+Dec 02 21:01:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 21:01:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_line p WHERE p.id = ? - (1)
+Dec 02 21:01:52 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO product (product_line_id, name, description_short, size, image) VALUES (?, ?, ?, ?, ?) - (1, Otro, jksksksksksk, 560 gr, )
+Dec 02 21:01:52 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/product/edit/id/2"
+Dec 02 21:01:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 02 21:01:52 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/product/edit/id/2"
+Dec 02 21:01:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (8)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Factories 16.86 ms (1)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Action "product/create" 87.35 ms (1)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 21:01:52 symfony [info] {sfWebResponse} Send content (126 o)
+Dec 02 21:01:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/2 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '2',)
+Dec 02 21:01:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 02 21:01:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 02 21:01:52 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 02 21:01:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 02 21:01:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (2)
+Dec 02 21:01:52 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 02 21:01:52 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 02 21:01:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 02 21:01:52 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 21:01:52 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 02 21:01:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 02 21:01:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (9)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Factories 17.09 ms (1)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Action "product/edit" 33.35 ms (1)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 12.78 ms (1)
+Dec 02 21:01:52 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.38 ms (1)
+Dec 02 21:01:52 symfony [info] {sfWebResponse} Send content (41224 o)
+Dec 09 23:28:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 09 23:28:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:28:35 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 09 23:28:35 symfony [info] {sfBasicSecurityFilter} Action "home/index" requires authentication, forwarding to "home/login"
+Dec 09 23:28:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:28:35 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 09 23:28:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:28:35 symfony [info] {homeActions} Call "homeActions->executeLogin()"
+Dec 09 23:28:35 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/home/templates/loginSuccess.php"
+Dec 09 23:28:35 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 09 23:28:35 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 09 23:28:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 09 23:28:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:28:35 symfony [info] {sfWebDebugLogger} Configuration 1.86 ms (12)
+Dec 09 23:28:35 symfony [info] {sfWebDebugLogger} Factories 54.16 ms (1)
+Dec 09 23:28:35 symfony [info] {sfWebDebugLogger} Action "home/login" 0.23 ms (1)
+Dec 09 23:28:35 symfony [info] {sfWebDebugLogger} View "Success" for "home/login" 43.41 ms (1)
+Dec 09 23:28:35 symfony [info] {sfWebResponse} Send content (29920 o)
+Dec 09 23:28:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/validateLogin with parameters array (  'module' => 'home',  'action' => 'validateLogin',)
+Dec 09 23:28:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:28:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:28:41 symfony [info] {homeActions} Call "homeActions->executeValidateLogin()"
+Dec 09 23:28:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 09 23:28:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT u.id AS u__id, u.user_type_id AS u__user_type_id, u.username AS u__username, u.password AS u__password FROM user u WHERE (u.username = ? AND u.password = ?) - (juanma, juanma)
+Dec 09 23:28:41 symfony [info] {myUser} User is authenticated
+Dec 09 23:28:41 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/"
+Dec 09 23:28:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 09 23:28:41 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/"
+Dec 09 23:28:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (8)
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} Factories 17.13 ms (1)
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} Action "home/validateLogin" 53.95 ms (1)
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 09 23:28:41 symfony [info] {sfWebResponse} Send content (109 o)
+Dec 09 23:28:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 09 23:28:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:28:41 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 09 23:28:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:28:41 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Dec 09 23:28:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/home/templates/indexSuccess.php"
+Dec 09 23:28:41 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:28:41 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:28:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 09 23:28:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (9)
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} Factories 16.95 ms (1)
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} Action "home/index" 0.11 ms (1)
+Dec 09 23:28:41 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 32.79 ms (1)
+Dec 09 23:28:42 symfony [info] {sfWebResponse} Send content (29072 o)
+Dec 09 23:28:44 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /product with parameters array (  'module' => 'product',  'action' => 'index',)
+Dec 09 23:28:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:28:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:28:44 symfony [info] {productActions} Call "productActions->executeIndex()"
+Dec 09 23:28:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 09 23:28:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Dec 09 23:28:44 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/indexSuccess.php"
+Dec 09 23:28:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 09 23:28:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p WHERE (p.id = ?) - (1)
+Dec 09 23:28:44 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:28:44 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:28:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 09 23:28:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:28:44 symfony [info] {sfWebDebugLogger} Configuration 1.55 ms (9)
+Dec 09 23:28:44 symfony [info] {sfWebDebugLogger} Factories 17.71 ms (1)
+Dec 09 23:28:44 symfony [info] {sfWebDebugLogger} Action "product/index" 30.46 ms (1)
+Dec 09 23:28:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (4)
+Dec 09 23:28:44 symfony [info] {sfWebDebugLogger} View "Success" for "product/index" 54.16 ms (1)
+Dec 09 23:28:44 symfony [info] {sfWebResponse} Send content (36151 o)
+Dec 09 23:28:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/new with parameters array (  'module' => 'product',  'action' => 'new',)
+Dec 09 23:28:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:28:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:28:47 symfony [info] {productActions} Call "productActions->executeNew()"
+Dec 09 23:28:47 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/newSuccess.php"
+Dec 09 23:28:47 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 09 23:28:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 09 23:28:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 09 23:28:47 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:28:47 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:28:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 09 23:28:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:28:47 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Dec 09 23:28:47 symfony [info] {sfWebDebugLogger} Factories 17.73 ms (1)
+Dec 09 23:28:47 symfony [info] {sfWebDebugLogger} Action "product/new" 106.50 ms (1)
+Dec 09 23:28:47 symfony [info] {sfWebDebugLogger} View "Success" for "product/new" 80.03 ms (1)
+Dec 09 23:28:47 symfony [info] {sfWebDebugLogger} Partial "product/_form" 66.69 ms (1)
+Dec 09 23:28:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 09 23:28:47 symfony [info] {sfWebResponse} Send content (38221 o)
+Dec 09 23:29:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/create with parameters array (  'module' => 'product',  'action' => 'create',)
+Dec 09 23:29:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:29:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:29:22 symfony [info] {productActions} Call "productActions->executeCreate()"
+Dec 09 23:29:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 09 23:29:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM product_line p WHERE p.id = ? - (1)
+Dec 09 23:29:22 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO product (product_line_id, name, description_short, size, image) VALUES (?, ?, ?, ?, ?) - (1, Gel de limpieza herbal para piel normal y sensible, Barre las células muertas del cuerpo limpiando en profundidad. Hidrata
+la piel dejándola suave y luminosa., 10000 gramos, )
+Dec 09 23:29:22 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/product/edit/id/3"
+Dec 09 23:29:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 09 23:29:22 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/product/edit/id/3"
+Dec 09 23:29:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (8)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Factories 17.43 ms (1)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Action "product/create" 152.26 ms (1)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 09 23:29:22 symfony [info] {sfWebResponse} Send content (126 o)
+Dec 09 23:29:22 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /product/edit/id/3 with parameters array (  'module' => 'product',  'action' => 'edit',  'id' => '3',)
+Dec 09 23:29:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:29:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:29:22 symfony [info] {productActions} Call "productActions->executeEdit()"
+Dec 09 23:29:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 09 23:29:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.id = ?) LIMIT 1 - (3)
+Dec 09 23:29:22 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/product/templates/editSuccess.php"
+Dec 09 23:29:22 symfony [info] {sfPartialView} Render "/var/www/simple-site/apps/backend/modules/product/templates/_form.php"
+Dec 09 23:29:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Dec 09 23:29:22 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:29:22 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-control-panel.php"
+Dec 09 23:29:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 09 23:29:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Factories 17.83 ms (1)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Action "product/edit" 42.72 ms (1)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} View "Success" for "product/edit" 14.24 ms (1)
+Dec 09 23:29:22 symfony [info] {sfWebDebugLogger} Partial "product/_form" 6.85 ms (1)
+Dec 09 23:29:22 symfony [info] {sfWebResponse} Send content (41374 o)
+Dec 09 23:32:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/logout with parameters array (  'module' => 'home',  'action' => 'logout',)
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:32:10 symfony [info] {homeActions} Call "homeActions->executeLogout()"
+Dec 09 23:32:10 symfony [info] {myUser} User is not authenticated
+Dec 09 23:32:10 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8084/backend_dev.php/"
+Dec 09 23:32:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Dec 09 23:32:10 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8084/backend_dev.php/"
+Dec 09 23:32:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:32:10 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (8)
+Dec 09 23:32:10 symfony [info] {sfWebDebugLogger} Factories 19.75 ms (1)
+Dec 09 23:32:10 symfony [info] {sfWebDebugLogger} Action "home/logout" 1.07 ms (1)
+Dec 09 23:32:10 symfony [info] {sfWebResponse} Send content (109 o)
+Dec 09 23:32:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 09 23:32:10 symfony [info] {sfBasicSecurityFilter} Action "home/index" requires authentication, forwarding to "home/login"
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Dec 09 23:32:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 09 23:32:10 symfony [info] {homeActions} Call "homeActions->executeLogin()"
+Dec 09 23:32:10 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/modules/home/templates/loginSuccess.php"
+Dec 09 23:32:10 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 09 23:32:10 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/backend/templates/layout-login.php"
+Dec 09 23:32:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Dec 09 23:32:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 09 23:32:10 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (12)
+Dec 09 23:32:10 symfony [info] {sfWebDebugLogger} Factories 17.27 ms (1)
+Dec 09 23:32:10 symfony [info] {sfWebDebugLogger} Action "home/login" 0.11 ms (1)
+Dec 09 23:32:10 symfony [info] {sfWebDebugLogger} View "Success" for "home/login" 6.64 ms (1)
+Dec 09 23:32:10 symfony [info] {sfWebResponse} Send content (30073 o)
