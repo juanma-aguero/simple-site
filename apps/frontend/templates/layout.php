@@ -38,7 +38,7 @@
                         <a href="<?php echo url_for("servicio/index") ?>">nuestros servicios</a>
                     </div>
                     <div class="homepage-menu-item">
-                        <a href="<?php echo url_for("producto/linea?id=1") ?>">nuestros productos</a>
+                        <a href="<?php echo url_for("producto/linea") ?>">nuestros productos</a>
                     </div>
                 </div>
             </div>

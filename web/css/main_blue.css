@@ -252,12 +252,13 @@ a.homepage-menu:hover{
     margin-top: 15px;
     margin-left: 20px;
     float: left;
-    width: 200px;
 }
 .product-image a{
 }
 .product-image img{
     border: none;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .category-menu{
@@ -321,6 +322,8 @@ a.homepage-menu:hover{
 .product-image-thumbs{
     position: relative;
     z-index: 0;
+    width: 150px;
+    height: 150px;
 }
 .product-description-thumbs{
     color: white;

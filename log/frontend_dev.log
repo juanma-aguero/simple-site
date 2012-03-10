@@ -7477,3 +7477,843 @@ Dec 09 23:29:26 symfony [info] {sfWebDebugLogger} Action "product/line" 22.26 ms
 Dec 09 23:29:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
 Dec 09 23:29:26 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.07 ms (1)
 Dec 09 23:29:26 symfony [info] {sfWebResponse} Send content (44090 o)
+Mar 10 10:47:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Mar 10 10:47:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 10:47:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 10:47:49 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Mar 10 10:47:49 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/home/templates/indexSuccess.php"
+Mar 10 10:47:49 symfony [info] {main} Set slot "title"
+Mar 10 10:47:49 symfony [info] {main} Set slot "content-left"
+Mar 10 10:47:49 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 10:47:49 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 10:47:49 symfony [info] {main} Get slot "title"
+Mar 10 10:47:49 symfony [info] {main} Get slot "content-left"
+Mar 10 10:47:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 10:47:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 10:47:49 symfony [info] {sfWebDebugLogger} Configuration 2.34 ms (9)
+Mar 10 10:47:49 symfony [info] {sfWebDebugLogger} Factories 136.93 ms (1)
+Mar 10 10:47:49 symfony [info] {sfWebDebugLogger} Action "home/index" 0.20 ms (1)
+Mar 10 10:47:49 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 66.40 ms (1)
+Mar 10 10:47:49 symfony [info] {sfWebResponse} Send content (36240 o)
+Mar 10 10:49:13 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Mar 10 10:49:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 10:49:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 10:49:13 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Mar 10 10:49:13 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/home/templates/indexSuccess.php"
+Mar 10 10:49:13 symfony [info] {main} Set slot "title"
+Mar 10 10:49:13 symfony [info] {main} Set slot "content-left"
+Mar 10 10:49:13 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 10:49:13 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 10:49:13 symfony [info] {main} Get slot "title"
+Mar 10 10:49:13 symfony [info] {main} Get slot "content-left"
+Mar 10 10:49:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 10:49:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 10:49:13 symfony [info] {sfWebDebugLogger} Configuration 1.96 ms (9)
+Mar 10 10:49:13 symfony [info] {sfWebDebugLogger} Factories 49.59 ms (1)
+Mar 10 10:49:13 symfony [info] {sfWebDebugLogger} Action "home/index" 0.19 ms (1)
+Mar 10 10:49:13 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 15.93 ms (1)
+Mar 10 10:49:13 symfony [info] {sfWebResponse} Send content (36532 o)
+Mar 10 10:49:27 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/1 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '1',)
+Mar 10 10:49:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 10:49:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 10:49:27 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 10:49:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 10:49:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (1)
+Mar 10 10:49:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 10:49:27 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 10:49:27 symfony [info] {main} Set slot "title"
+Mar 10 10:49:27 symfony [info] {main} Set slot "content-left"
+Mar 10 10:49:27 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 10:49:27 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 10:49:27 symfony [info] {main} Get slot "title"
+Mar 10 10:49:27 symfony [info] {main} Get slot "content-left"
+Mar 10 10:49:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 10:49:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 10:49:27 symfony [info] {sfWebDebugLogger} Configuration 2.68 ms (9)
+Mar 10 10:49:27 symfony [info] {sfWebDebugLogger} Factories 41.17 ms (1)
+Mar 10 10:49:27 symfony [info] {sfWebDebugLogger} Action "product/line" 237.87 ms (1)
+Mar 10 10:49:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Mar 10 10:49:27 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 47.73 ms (1)
+Mar 10 10:49:27 symfony [info] {sfWebResponse} Send content (44188 o)
+Mar 10 11:03:28 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/1 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '1',)
+Mar 10 11:03:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:03:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:03:28 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:03:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:03:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (1)
+Mar 10 11:03:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:03:28 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:03:28 symfony [info] {main} Set slot "title"
+Mar 10 11:03:28 symfony [info] {main} Set slot "content-left"
+Mar 10 11:03:28 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:28 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:28 symfony [info] {main} Get slot "title"
+Mar 10 11:03:28 symfony [info] {main} Get slot "content-left"
+Mar 10 11:03:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:03:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:03:28 symfony [info] {sfWebDebugLogger} Configuration 1.80 ms (9)
+Mar 10 11:03:28 symfony [info] {sfWebDebugLogger} Factories 37.37 ms (1)
+Mar 10 11:03:28 symfony [info] {sfWebDebugLogger} Action "product/line" 44.96 ms (1)
+Mar 10 11:03:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:03:28 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 21.27 ms (1)
+Mar 10 11:03:28 symfony [info] {sfWebResponse} Send content (44440 o)
+Mar 10 11:03:31 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:03:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:03:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:03:31 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:03:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:03:31 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:03:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:03:31 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:03:31 symfony [info] {main} Set slot "title"
+Mar 10 11:03:31 symfony [info] {main} Set slot "content-left"
+Mar 10 11:03:31 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:31 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:31 symfony [info] {main} Get slot "title"
+Mar 10 11:03:31 symfony [info] {main} Get slot "content-left"
+Mar 10 11:03:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:03:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:03:31 symfony [info] {sfWebDebugLogger} Configuration 1.93 ms (9)
+Mar 10 11:03:31 symfony [info] {sfWebDebugLogger} Factories 38.81 ms (1)
+Mar 10 11:03:31 symfony [info] {sfWebDebugLogger} Action "product/line" 46.14 ms (1)
+Mar 10 11:03:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Mar 10 11:03:31 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 21.74 ms (1)
+Mar 10 11:03:31 symfony [info] {sfWebResponse} Send content (42232 o)
+Mar 10 11:03:33 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/1 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '1',)
+Mar 10 11:03:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:03:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:03:33 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:03:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:03:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (1)
+Mar 10 11:03:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:03:33 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:03:33 symfony [info] {main} Set slot "title"
+Mar 10 11:03:33 symfony [info] {main} Set slot "content-left"
+Mar 10 11:03:33 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:33 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:33 symfony [info] {main} Get slot "title"
+Mar 10 11:03:33 symfony [info] {main} Get slot "content-left"
+Mar 10 11:03:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:03:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:03:33 symfony [info] {sfWebDebugLogger} Configuration 2.06 ms (9)
+Mar 10 11:03:33 symfony [info] {sfWebDebugLogger} Factories 40.12 ms (1)
+Mar 10 11:03:33 symfony [info] {sfWebDebugLogger} Action "product/line" 48.48 ms (1)
+Mar 10 11:03:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:03:33 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 33.07 ms (1)
+Mar 10 11:03:33 symfony [info] {sfWebResponse} Send content (44428 o)
+Mar 10 11:03:34 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:03:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:03:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:03:34 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:03:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:03:34 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:03:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:03:34 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:03:34 symfony [info] {main} Set slot "title"
+Mar 10 11:03:34 symfony [info] {main} Set slot "content-left"
+Mar 10 11:03:34 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:34 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:03:34 symfony [info] {main} Get slot "title"
+Mar 10 11:03:34 symfony [info] {main} Get slot "content-left"
+Mar 10 11:03:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:03:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:03:34 symfony [info] {sfWebDebugLogger} Configuration 1.77 ms (9)
+Mar 10 11:03:34 symfony [info] {sfWebDebugLogger} Factories 39.80 ms (1)
+Mar 10 11:03:34 symfony [info] {sfWebDebugLogger} Action "product/line" 45.70 ms (1)
+Mar 10 11:03:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Mar 10 11:03:34 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 20.35 ms (1)
+Mar 10 11:03:35 symfony [info] {sfWebResponse} Send content (42232 o)
+Mar 10 11:07:20 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:07:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:07:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:07:20 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:07:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:07:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:07:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:07:20 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:07:20 symfony [info] {main} Set slot "title"
+Mar 10 11:07:20 symfony [info] {main} Set slot "content-left"
+Mar 10 11:07:20 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:20 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:20 symfony [info] {main} Get slot "title"
+Mar 10 11:07:20 symfony [info] {main} Get slot "content-left"
+Mar 10 11:07:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:07:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:07:20 symfony [info] {sfWebDebugLogger} Configuration 0.96 ms (9)
+Mar 10 11:07:20 symfony [info] {sfWebDebugLogger} Factories 17.11 ms (1)
+Mar 10 11:07:20 symfony [info] {sfWebDebugLogger} Action "product/line" 24.10 ms (1)
+Mar 10 11:07:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:07:20 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 11.35 ms (1)
+Mar 10 11:07:20 symfony [info] {sfWebResponse} Send content (45303 o)
+Mar 10 11:07:23 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/1 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '1',)
+Mar 10 11:07:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:07:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:07:23 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:07:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:07:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (1)
+Mar 10 11:07:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:07:23 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:07:23 symfony [info] {main} Set slot "title"
+Mar 10 11:07:23 symfony [info] {main} Set slot "content-left"
+Mar 10 11:07:23 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:23 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:23 symfony [info] {main} Get slot "title"
+Mar 10 11:07:23 symfony [info] {main} Get slot "content-left"
+Mar 10 11:07:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:07:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:07:23 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (9)
+Mar 10 11:07:23 symfony [info] {sfWebDebugLogger} Factories 16.87 ms (1)
+Mar 10 11:07:23 symfony [info] {sfWebDebugLogger} Action "product/line" 24.42 ms (1)
+Mar 10 11:07:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:07:23 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.13 ms (1)
+Mar 10 11:07:23 symfony [info] {sfWebResponse} Send content (41387 o)
+Mar 10 11:07:24 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:07:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:07:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:07:24 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:07:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:07:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:07:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:07:24 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:07:24 symfony [info] {main} Set slot "title"
+Mar 10 11:07:24 symfony [info] {main} Set slot "content-left"
+Mar 10 11:07:24 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:24 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:24 symfony [info] {main} Get slot "title"
+Mar 10 11:07:24 symfony [info] {main} Get slot "content-left"
+Mar 10 11:07:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:07:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:07:24 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (9)
+Mar 10 11:07:24 symfony [info] {sfWebDebugLogger} Factories 17.04 ms (1)
+Mar 10 11:07:24 symfony [info] {sfWebDebugLogger} Action "product/line" 28.30 ms (1)
+Mar 10 11:07:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:07:24 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 11.28 ms (1)
+Mar 10 11:07:24 symfony [info] {sfWebResponse} Send content (45271 o)
+Mar 10 11:07:37 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/1 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '1',)
+Mar 10 11:07:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:07:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:07:37 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:07:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:07:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (1)
+Mar 10 11:07:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:07:37 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:07:37 symfony [info] {main} Set slot "title"
+Mar 10 11:07:37 symfony [info] {main} Set slot "content-left"
+Mar 10 11:07:37 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:37 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:37 symfony [info] {main} Get slot "title"
+Mar 10 11:07:37 symfony [info] {main} Get slot "content-left"
+Mar 10 11:07:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:07:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:07:37 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
+Mar 10 11:07:37 symfony [info] {sfWebDebugLogger} Factories 16.86 ms (1)
+Mar 10 11:07:37 symfony [info] {sfWebDebugLogger} Action "product/line" 25.05 ms (1)
+Mar 10 11:07:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:07:37 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 9.42 ms (1)
+Mar 10 11:07:37 symfony [info] {sfWebResponse} Send content (41386 o)
+Mar 10 11:07:38 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:07:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:07:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:07:38 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:07:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:07:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:07:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:07:38 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:07:38 symfony [info] {main} Set slot "title"
+Mar 10 11:07:38 symfony [info] {main} Set slot "content-left"
+Mar 10 11:07:38 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:38 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:38 symfony [info] {main} Get slot "title"
+Mar 10 11:07:38 symfony [info] {main} Get slot "content-left"
+Mar 10 11:07:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:07:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:07:38 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (9)
+Mar 10 11:07:38 symfony [info] {sfWebDebugLogger} Factories 17.13 ms (1)
+Mar 10 11:07:38 symfony [info] {sfWebDebugLogger} Action "product/line" 26.41 ms (1)
+Mar 10 11:07:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:07:38 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 11.20 ms (1)
+Mar 10 11:07:38 symfony [info] {sfWebResponse} Send content (45271 o)
+Mar 10 11:07:58 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:07:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:07:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:07:58 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:07:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:07:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:07:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:07:58 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:07:58 symfony [info] {main} Set slot "title"
+Mar 10 11:07:58 symfony [info] {main} Set slot "content-left"
+Mar 10 11:07:58 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:58 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:07:58 symfony [info] {main} Get slot "title"
+Mar 10 11:07:58 symfony [info] {main} Get slot "content-left"
+Mar 10 11:07:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:07:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:07:58 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (9)
+Mar 10 11:07:58 symfony [info] {sfWebDebugLogger} Factories 17.62 ms (1)
+Mar 10 11:07:58 symfony [info] {sfWebDebugLogger} Action "product/line" 24.06 ms (1)
+Mar 10 11:07:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:07:58 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 12.96 ms (1)
+Mar 10 11:07:58 symfony [info] {sfWebResponse} Send content (45079 o)
+Mar 10 11:12:30 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/1 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '1',)
+Mar 10 11:12:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:12:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:12:30 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:12:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:12:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (1)
+Mar 10 11:12:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:12:30 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:12:30 symfony [info] {main} Set slot "title"
+Mar 10 11:12:30 symfony [info] {main} Set slot "content-left"
+Mar 10 11:12:30 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:30 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:30 symfony [info] {main} Get slot "title"
+Mar 10 11:12:30 symfony [info] {main} Get slot "content-left"
+Mar 10 11:12:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:12:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:12:30 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Mar 10 11:12:30 symfony [info] {sfWebDebugLogger} Factories 19.12 ms (1)
+Mar 10 11:12:30 symfony [info] {sfWebDebugLogger} Action "product/line" 32.98 ms (1)
+Mar 10 11:12:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:12:30 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.42 ms (1)
+Mar 10 11:12:31 symfony [info] {sfWebResponse} Send content (41147 o)
+Mar 10 11:12:40 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/1 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '1',)
+Mar 10 11:12:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:12:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:12:40 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:12:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:12:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (1)
+Mar 10 11:12:40 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:12:40 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:12:40 symfony [info] {main} Set slot "title"
+Mar 10 11:12:40 symfony [info] {main} Set slot "content-left"
+Mar 10 11:12:40 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:40 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:40 symfony [info] {main} Get slot "title"
+Mar 10 11:12:40 symfony [info] {main} Get slot "content-left"
+Mar 10 11:12:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:12:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:12:40 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (9)
+Mar 10 11:12:40 symfony [info] {sfWebDebugLogger} Factories 18.02 ms (1)
+Mar 10 11:12:40 symfony [info] {sfWebDebugLogger} Action "product/line" 27.33 ms (1)
+Mar 10 11:12:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Mar 10 11:12:40 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.70 ms (1)
+Mar 10 11:12:40 symfony [info] {sfWebResponse} Send content (41142 o)
+Mar 10 11:12:42 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea with parameters array (  'module' => 'product',  'action' => 'line',)
+Mar 10 11:12:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:12:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:12:42 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:12:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:12:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Mar 10 11:12:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:12:42 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:12:42 symfony [info] {main} Set slot "title"
+Mar 10 11:12:42 symfony [info] {main} Set slot "content-left"
+Mar 10 11:12:42 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:42 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:42 symfony [info] {main} Get slot "title"
+Mar 10 11:12:42 symfony [info] {main} Get slot "content-left"
+Mar 10 11:12:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:12:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:12:42 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Mar 10 11:12:42 symfony [info] {sfWebDebugLogger} Factories 17.08 ms (1)
+Mar 10 11:12:42 symfony [info] {sfWebDebugLogger} Action "product/line" 19.38 ms (1)
+Mar 10 11:12:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:12:42 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.33 ms (1)
+Mar 10 11:12:42 symfony [info] {sfWebResponse} Send content (44649 o)
+Mar 10 11:12:44 symfony [info] {sfPatternRouting} Match route "servicios" (/servicio) for /servicio with parameters array (  'module' => 'service',  'action' => 'index',)
+Mar 10 11:12:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:12:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:12:44 symfony [info] {serviceActions} Call "serviceActions->executeIndex()"
+Mar 10 11:12:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:12:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description FROM service s - ()
+Mar 10 11:12:44 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/service/templates/indexSuccess.php"
+Mar 10 11:12:44 symfony [info] {main} Set slot "title"
+Mar 10 11:12:44 symfony [info] {main} Set slot "content-left"
+Mar 10 11:12:44 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:44 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:44 symfony [info] {main} Get slot "title"
+Mar 10 11:12:44 symfony [info] {main} Get slot "content-left"
+Mar 10 11:12:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:12:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:12:44 symfony [info] {sfWebDebugLogger} Configuration 1.17 ms (9)
+Mar 10 11:12:44 symfony [info] {sfWebDebugLogger} Factories 17.04 ms (1)
+Mar 10 11:12:44 symfony [info] {sfWebDebugLogger} Action "service/index" 21.75 ms (1)
+Mar 10 11:12:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Mar 10 11:12:44 symfony [info] {sfWebDebugLogger} View "Success" for "service/index" 7.85 ms (1)
+Mar 10 11:12:44 symfony [info] {sfWebResponse} Send content (39154 o)
+Mar 10 11:12:46 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea with parameters array (  'module' => 'product',  'action' => 'line',)
+Mar 10 11:12:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:12:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:12:46 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:12:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:12:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p - ()
+Mar 10 11:12:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:12:46 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:12:46 symfony [info] {main} Set slot "title"
+Mar 10 11:12:46 symfony [info] {main} Set slot "content-left"
+Mar 10 11:12:46 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:46 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:12:46 symfony [info] {main} Get slot "title"
+Mar 10 11:12:46 symfony [info] {main} Get slot "content-left"
+Mar 10 11:12:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:12:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:12:46 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (9)
+Mar 10 11:12:46 symfony [info] {sfWebDebugLogger} Factories 16.95 ms (1)
+Mar 10 11:12:46 symfony [info] {sfWebDebugLogger} Action "product/line" 19.32 ms (1)
+Mar 10 11:12:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:12:46 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.54 ms (1)
+Mar 10 11:12:46 symfony [info] {sfWebResponse} Send content (44638 o)
+Mar 10 11:14:04 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Mar 10 11:14:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:14:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:14:04 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Mar 10 11:14:04 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/home/templates/indexSuccess.php"
+Mar 10 11:14:04 symfony [info] {main} Set slot "title"
+Mar 10 11:14:04 symfony [info] {main} Set slot "content-left"
+Mar 10 11:14:04 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:14:04 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:14:04 symfony [info] {main} Get slot "title"
+Mar 10 11:14:04 symfony [info] {main} Get slot "content-left"
+Mar 10 11:14:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:14:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:14:04 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (9)
+Mar 10 11:14:04 symfony [info] {sfWebDebugLogger} Factories 18.90 ms (1)
+Mar 10 11:14:04 symfony [info] {sfWebDebugLogger} Action "home/index" 0.10 ms (1)
+Mar 10 11:14:04 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 7.31 ms (1)
+Mar 10 11:14:04 symfony [info] {sfWebResponse} Send content (36621 o)
+Mar 10 11:14:06 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea with parameters array (  'module' => 'product',  'action' => 'line',)
+Mar 10 11:14:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:14:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:14:06 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:14:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:14:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:14:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:14:06 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:14:06 symfony [info] {main} Set slot "title"
+Mar 10 11:14:06 symfony [info] {main} Set slot "content-left"
+Mar 10 11:14:06 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:14:06 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:14:06 symfony [info] {main} Get slot "title"
+Mar 10 11:14:06 symfony [info] {main} Get slot "content-left"
+Mar 10 11:14:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:14:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:14:06 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (9)
+Mar 10 11:14:06 symfony [info] {sfWebDebugLogger} Factories 22.72 ms (1)
+Mar 10 11:14:06 symfony [info] {sfWebDebugLogger} Action "product/line" 25.75 ms (1)
+Mar 10 11:14:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:14:06 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 11.10 ms (1)
+Mar 10 11:14:06 symfony [info] {sfWebResponse} Send content (44923 o)
+Mar 10 11:15:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'home',  'action' => 'index',)
+Mar 10 11:15:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:15:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:15:42 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Mar 10 11:15:42 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/home/templates/indexSuccess.php"
+Mar 10 11:15:42 symfony [info] {main} Set slot "title"
+Mar 10 11:15:42 symfony [info] {main} Set slot "content-left"
+Mar 10 11:15:42 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:15:42 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:15:42 symfony [info] {main} Get slot "title"
+Mar 10 11:15:42 symfony [info] {main} Get slot "content-left"
+Mar 10 11:15:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:15:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:15:42 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+Mar 10 11:15:42 symfony [info] {sfWebDebugLogger} Factories 16.92 ms (1)
+Mar 10 11:15:42 symfony [info] {sfWebDebugLogger} Action "home/index" 0.16 ms (1)
+Mar 10 11:15:42 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 7.15 ms (1)
+Mar 10 11:15:42 symfony [info] {sfWebResponse} Send content (36621 o)
+Mar 10 11:15:43 symfony [info] {sfPatternRouting} Match route "servicios" (/servicio) for /servicio with parameters array (  'module' => 'service',  'action' => 'index',)
+Mar 10 11:15:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:15:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:15:43 symfony [info] {serviceActions} Call "serviceActions->executeIndex()"
+Mar 10 11:15:43 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:15:43 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description FROM service s - ()
+Mar 10 11:15:43 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/service/templates/indexSuccess.php"
+Mar 10 11:15:43 symfony [info] {main} Set slot "title"
+Mar 10 11:15:43 symfony [info] {main} Set slot "content-left"
+Mar 10 11:15:43 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:15:43 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:15:43 symfony [info] {main} Get slot "title"
+Mar 10 11:15:43 symfony [info] {main} Get slot "content-left"
+Mar 10 11:15:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:15:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:15:43 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
+Mar 10 11:15:43 symfony [info] {sfWebDebugLogger} Factories 17.28 ms (1)
+Mar 10 11:15:43 symfony [info] {sfWebDebugLogger} Action "service/index" 18.07 ms (1)
+Mar 10 11:15:43 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Mar 10 11:15:43 symfony [info] {sfWebDebugLogger} View "Success" for "service/index" 7.27 ms (1)
+Mar 10 11:15:43 symfony [info] {sfWebResponse} Send content (39141 o)
+Mar 10 11:15:45 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea with parameters array (  'module' => 'product',  'action' => 'line',)
+Mar 10 11:15:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:15:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:15:45 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:15:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:15:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:15:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:15:45 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:15:45 symfony [info] {main} Set slot "title"
+Mar 10 11:15:45 symfony [info] {main} Set slot "content-left"
+Mar 10 11:15:45 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:15:45 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:15:45 symfony [info] {main} Get slot "title"
+Mar 10 11:15:45 symfony [info] {main} Get slot "content-left"
+Mar 10 11:15:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:15:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:15:45 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+Mar 10 11:15:45 symfony [info] {sfWebDebugLogger} Factories 17.00 ms (1)
+Mar 10 11:15:45 symfony [info] {sfWebDebugLogger} Action "product/line" 23.89 ms (1)
+Mar 10 11:15:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:15:45 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.64 ms (1)
+Mar 10 11:15:45 symfony [info] {sfWebResponse} Send content (44949 o)
+Mar 10 11:17:12 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea with parameters array (  'module' => 'product',  'action' => 'line',)
+Mar 10 11:17:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:17:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:17:12 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:17:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:17:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:17:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:17:12 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:17:12 symfony [info] {main} Set slot "title"
+Mar 10 11:17:12 symfony [info] {main} Set slot "content-left"
+Mar 10 11:17:12 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:12 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:12 symfony [info] {main} Get slot "title"
+Mar 10 11:17:12 symfony [info] {main} Get slot "content-left"
+Mar 10 11:17:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:17:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:17:12 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (9)
+Mar 10 11:17:12 symfony [info] {sfWebDebugLogger} Factories 17.54 ms (1)
+Mar 10 11:17:12 symfony [info] {sfWebDebugLogger} Action "product/line" 22.60 ms (1)
+Mar 10 11:17:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:17:12 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.96 ms (1)
+Mar 10 11:17:12 symfony [info] {sfWebResponse} Send content (45179 o)
+Mar 10 11:17:15 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:17:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:17:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:17:15 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:17:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:17:15 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:17:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:17:15 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:17:15 symfony [info] {main} Set slot "title"
+Mar 10 11:17:15 symfony [info] {main} Set slot "content-left"
+Mar 10 11:17:15 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:15 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:15 symfony [info] {main} Get slot "title"
+Mar 10 11:17:15 symfony [info] {main} Get slot "content-left"
+Mar 10 11:17:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:17:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:17:15 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (9)
+Mar 10 11:17:15 symfony [info] {sfWebDebugLogger} Factories 18.74 ms (1)
+Mar 10 11:17:15 symfony [info] {sfWebDebugLogger} Action "product/line" 24.16 ms (1)
+Mar 10 11:17:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:17:15 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 9.94 ms (1)
+Mar 10 11:17:15 symfony [info] {sfWebResponse} Send content (42311 o)
+Mar 10 11:17:25 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:17:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:17:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:17:25 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:17:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:17:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:17:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:17:25 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:17:25 symfony [info] {main} Set slot "title"
+Mar 10 11:17:25 symfony [info] {main} Set slot "content-left"
+Mar 10 11:17:25 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:25 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:25 symfony [info] {main} Get slot "title"
+Mar 10 11:17:25 symfony [info] {main} Get slot "content-left"
+Mar 10 11:17:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:17:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:17:25 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+Mar 10 11:17:25 symfony [info] {sfWebDebugLogger} Factories 17.84 ms (1)
+Mar 10 11:17:25 symfony [info] {sfWebDebugLogger} Action "product/line" 21.99 ms (1)
+Mar 10 11:17:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:17:25 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.96 ms (1)
+Mar 10 11:17:25 symfony [info] {sfWebResponse} Send content (45266 o)
+Mar 10 11:17:33 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:17:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:17:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:17:33 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:17:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:17:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:17:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:17:33 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:17:33 symfony [info] {main} Set slot "title"
+Mar 10 11:17:33 symfony [info] {main} Set slot "content-left"
+Mar 10 11:17:33 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:33 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:33 symfony [info] {main} Get slot "title"
+Mar 10 11:17:33 symfony [info] {main} Get slot "content-left"
+Mar 10 11:17:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:17:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:17:33 symfony [info] {sfWebDebugLogger} Configuration 1.45 ms (9)
+Mar 10 11:17:33 symfony [info] {sfWebDebugLogger} Factories 20.66 ms (1)
+Mar 10 11:17:33 symfony [info] {sfWebDebugLogger} Action "product/line" 27.50 ms (1)
+Mar 10 11:17:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:17:33 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 12.51 ms (1)
+Mar 10 11:17:33 symfony [info] {sfWebResponse} Send content (42317 o)
+Mar 10 11:17:51 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:17:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:17:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:17:51 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:17:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:17:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:17:51 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:17:51 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:17:51 symfony [info] {main} Set slot "title"
+Mar 10 11:17:51 symfony [info] {main} Set slot "content-left"
+Mar 10 11:17:51 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:51 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:51 symfony [info] {main} Get slot "title"
+Mar 10 11:17:51 symfony [info] {main} Get slot "content-left"
+Mar 10 11:17:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:17:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:17:51 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Mar 10 11:17:51 symfony [info] {sfWebDebugLogger} Factories 18.63 ms (1)
+Mar 10 11:17:51 symfony [info] {sfWebDebugLogger} Action "product/line" 30.84 ms (1)
+Mar 10 11:17:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:17:51 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 14.16 ms (1)
+Mar 10 11:17:51 symfony [info] {sfWebResponse} Send content (45267 o)
+Mar 10 11:17:53 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea with parameters array (  'module' => 'product',  'action' => 'line',)
+Mar 10 11:17:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:17:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:17:53 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:17:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:17:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:17:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:17:53 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:17:53 symfony [info] {main} Set slot "title"
+Mar 10 11:17:53 symfony [info] {main} Set slot "content-left"
+Mar 10 11:17:53 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:53 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:53 symfony [info] {main} Get slot "title"
+Mar 10 11:17:53 symfony [info] {main} Get slot "content-left"
+Mar 10 11:17:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:17:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:17:53 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (9)
+Mar 10 11:17:53 symfony [info] {sfWebDebugLogger} Factories 19.23 ms (1)
+Mar 10 11:17:53 symfony [info] {sfWebDebugLogger} Action "product/line" 25.92 ms (1)
+Mar 10 11:17:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:17:53 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 15.40 ms (1)
+Mar 10 11:17:53 symfony [info] {sfWebResponse} Send content (45184 o)
+Mar 10 11:17:58 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:17:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:17:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:17:58 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:17:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:17:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:17:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:17:58 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:17:58 symfony [info] {main} Set slot "title"
+Mar 10 11:17:58 symfony [info] {main} Set slot "content-left"
+Mar 10 11:17:58 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:58 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:17:58 symfony [info] {main} Get slot "title"
+Mar 10 11:17:58 symfony [info] {main} Get slot "content-left"
+Mar 10 11:17:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:17:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:17:58 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (9)
+Mar 10 11:17:58 symfony [info] {sfWebDebugLogger} Factories 17.04 ms (1)
+Mar 10 11:17:58 symfony [info] {sfWebDebugLogger} Action "product/line" 21.71 ms (1)
+Mar 10 11:17:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:17:58 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 9.45 ms (1)
+Mar 10 11:17:58 symfony [info] {sfWebResponse} Send content (42311 o)
+Mar 10 11:23:11 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:23:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:23:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:23:11 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:23:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:23:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:23:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:23:11 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:23:11 symfony [info] {main} Set slot "title"
+Mar 10 11:23:11 symfony [info] {main} Set slot "content-left"
+Mar 10 11:23:11 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:23:11 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:23:11 symfony [info] {main} Get slot "title"
+Mar 10 11:23:11 symfony [info] {main} Get slot "content-left"
+Mar 10 11:23:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:23:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:23:11 symfony [info] {sfWebDebugLogger} Configuration 0.97 ms (9)
+Mar 10 11:23:11 symfony [info] {sfWebDebugLogger} Factories 18.84 ms (1)
+Mar 10 11:23:11 symfony [info] {sfWebDebugLogger} Action "product/line" 25.29 ms (1)
+Mar 10 11:23:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:23:11 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.03 ms (1)
+Mar 10 11:23:11 symfony [info] {sfWebResponse} Send content (42044 o)
+Mar 10 11:23:20 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/2 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '2',)
+Mar 10 11:23:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:23:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:23:20 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:23:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:23:20 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 11:23:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:23:20 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:23:20 symfony [info] {main} Set slot "title"
+Mar 10 11:23:20 symfony [info] {main} Set slot "content-left"
+Mar 10 11:23:20 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:23:20 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:23:20 symfony [info] {main} Get slot "title"
+Mar 10 11:23:20 symfony [info] {main} Get slot "content-left"
+Mar 10 11:23:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:23:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:23:20 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (9)
+Mar 10 11:23:20 symfony [info] {sfWebDebugLogger} Factories 17.30 ms (1)
+Mar 10 11:23:20 symfony [info] {sfWebDebugLogger} Action "product/line" 23.14 ms (1)
+Mar 10 11:23:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (3)
+Mar 10 11:23:20 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 12.54 ms (1)
+Mar 10 11:23:20 symfony [info] {sfWebResponse} Send content (44966 o)
+Mar 10 11:23:24 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:23:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:23:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:23:24 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:23:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:23:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:23:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:23:24 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:23:24 symfony [info] {main} Set slot "title"
+Mar 10 11:23:24 symfony [info] {main} Set slot "content-left"
+Mar 10 11:23:24 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:23:24 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:23:24 symfony [info] {main} Get slot "title"
+Mar 10 11:23:24 symfony [info] {main} Get slot "content-left"
+Mar 10 11:23:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:23:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:23:24 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+Mar 10 11:23:24 symfony [info] {sfWebDebugLogger} Factories 17.31 ms (1)
+Mar 10 11:23:24 symfony [info] {sfWebDebugLogger} Action "product/line" 21.67 ms (1)
+Mar 10 11:23:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:23:24 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 9.56 ms (1)
+Mar 10 11:23:24 symfony [info] {sfWebResponse} Send content (42016 o)
+Mar 10 11:24:44 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:24:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:24:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:24:44 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:24:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:24:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:24:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:24:44 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:24:44 symfony [info] {main} Set slot "title"
+Mar 10 11:24:44 symfony [info] {main} Set slot "content-left"
+Mar 10 11:24:44 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:24:44 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:24:44 symfony [info] {main} Get slot "title"
+Mar 10 11:24:44 symfony [info] {main} Get slot "content-left"
+Mar 10 11:24:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:24:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:24:44 symfony [info] {sfWebDebugLogger} Configuration 0.93 ms (9)
+Mar 10 11:24:44 symfony [info] {sfWebDebugLogger} Factories 19.10 ms (1)
+Mar 10 11:24:44 symfony [info] {sfWebDebugLogger} Action "product/line" 25.32 ms (1)
+Mar 10 11:24:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:24:44 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.45 ms (1)
+Mar 10 11:24:44 symfony [info] {sfWebResponse} Send content (42049 o)
+Mar 10 11:25:26 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:25:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:25:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:25:26 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:25:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:25:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:25:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:25:26 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:25:26 symfony [info] {main} Set slot "title"
+Mar 10 11:25:26 symfony [info] {main} Set slot "content-left"
+Mar 10 11:25:26 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:25:26 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:25:26 symfony [info] {main} Get slot "title"
+Mar 10 11:25:26 symfony [info] {main} Get slot "content-left"
+Mar 10 11:25:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:25:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:25:26 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+Mar 10 11:25:26 symfony [info] {sfWebDebugLogger} Factories 19.58 ms (1)
+Mar 10 11:25:26 symfony [info] {sfWebDebugLogger} Action "product/line" 31.46 ms (1)
+Mar 10 11:25:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:25:26 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 11.39 ms (1)
+Mar 10 11:25:26 symfony [info] {sfWebResponse} Send content (42049 o)
+Mar 10 11:25:46 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:25:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:25:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:25:46 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:25:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:25:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:25:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:25:46 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:25:46 symfony [info] {main} Set slot "title"
+Mar 10 11:25:46 symfony [info] {main} Set slot "content-left"
+Mar 10 11:25:46 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:25:46 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:25:46 symfony [info] {main} Get slot "title"
+Mar 10 11:25:46 symfony [info] {main} Get slot "content-left"
+Mar 10 11:25:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:25:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:25:46 symfony [info] {sfWebDebugLogger} Configuration 1.04 ms (9)
+Mar 10 11:25:46 symfony [info] {sfWebDebugLogger} Factories 16.80 ms (1)
+Mar 10 11:25:46 symfony [info] {sfWebDebugLogger} Action "product/line" 25.35 ms (1)
+Mar 10 11:25:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:25:46 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.96 ms (1)
+Mar 10 11:25:46 symfony [info] {sfWebResponse} Send content (42049 o)
+Mar 10 11:25:50 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:25:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:25:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:25:50 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:25:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:25:50 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:25:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:25:50 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:25:50 symfony [info] {main} Set slot "title"
+Mar 10 11:25:50 symfony [info] {main} Set slot "content-left"
+Mar 10 11:25:50 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:25:50 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:25:50 symfony [info] {main} Get slot "title"
+Mar 10 11:25:50 symfony [info] {main} Get slot "content-left"
+Mar 10 11:25:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:25:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:25:50 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Mar 10 11:25:50 symfony [info] {sfWebDebugLogger} Factories 17.48 ms (1)
+Mar 10 11:25:50 symfony [info] {sfWebDebugLogger} Action "product/line" 22.05 ms (1)
+Mar 10 11:25:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:25:50 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 9.42 ms (1)
+Mar 10 11:25:50 symfony [info] {sfWebResponse} Send content (42071 o)
+Mar 10 11:26:10 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea/id/3 with parameters array (  'module' => 'product',  'action' => 'line',  'id' => '3',)
+Mar 10 11:26:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 11:26:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 11:26:10 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 11:26:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 11:26:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (3)
+Mar 10 11:26:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 11:26:10 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 11:26:10 symfony [info] {main} Set slot "title"
+Mar 10 11:26:10 symfony [info] {main} Set slot "content-left"
+Mar 10 11:26:10 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:26:10 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 11:26:10 symfony [info] {main} Get slot "title"
+Mar 10 11:26:10 symfony [info] {main} Get slot "content-left"
+Mar 10 11:26:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 11:26:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 11:26:10 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+Mar 10 11:26:10 symfony [info] {sfWebDebugLogger} Factories 18.76 ms (1)
+Mar 10 11:26:10 symfony [info] {sfWebDebugLogger} Action "product/line" 24.67 ms (1)
+Mar 10 11:26:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 11:26:10 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 10.03 ms (1)
+Mar 10 11:26:10 symfony [info] {sfWebResponse} Send content (42073 o)
+Mar 10 12:18:27 symfony [info] {sfPatternRouting} Match route "productos" (/producto/linea/*) for /producto/linea with parameters array (  'module' => 'product',  'action' => 'line',)
+Mar 10 12:18:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Mar 10 12:18:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Mar 10 12:18:27 symfony [info] {productActions} Call "productActions->executeLine()"
+Mar 10 12:18:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Mar 10 12:18:27 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.product_line_id AS p__product_line_id, p.product_category_id AS p__product_category_id, p.name AS p__name, p.description_short AS p__description_short, p.size AS p__size, p.image AS p__image FROM product p WHERE (p.product_line_id = ?) - (2)
+Mar 10 12:18:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.name AS p__name, p.description AS p__description FROM product_line p - ()
+Mar 10 12:18:27 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/modules/product/templates/lineSuccess.php"
+Mar 10 12:18:27 symfony [info] {main} Set slot "title"
+Mar 10 12:18:27 symfony [info] {main} Set slot "content-left"
+Mar 10 12:18:27 symfony [info] {sfPHPView} Decorate content with "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 12:18:27 symfony [info] {sfPHPView} Render "/var/www/simple-site/apps/frontend/templates/layout.php"
+Mar 10 12:18:27 symfony [info] {main} Get slot "title"
+Mar 10 12:18:27 symfony [info] {main} Get slot "content-left"
+Mar 10 12:18:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Mar 10 12:18:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Mar 10 12:18:27 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (9)
+Mar 10 12:18:27 symfony [info] {sfWebDebugLogger} Factories 20.19 ms (1)
+Mar 10 12:18:27 symfony [info] {sfWebDebugLogger} Action "product/line" 26.80 ms (1)
+Mar 10 12:18:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Mar 10 12:18:27 symfony [info] {sfWebDebugLogger} View "Success" for "product/line" 13.57 ms (1)
+Mar 10 12:18:27 symfony [info] {sfWebResponse} Send content (44545 o)

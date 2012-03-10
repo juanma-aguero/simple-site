@@ -23,10 +23,12 @@ class productActions extends sfActions {
         $query = Doctrine_Core::getTable('Product')->createQuery('p');
 
         $this->lineSelected = $request->getParameter("id");
-
-        if ($this->lineSelected) {
-            $query->andWhere("p.product_line_id = ?", $this->lineSelected);
+        
+        if (!$this->lineSelected) {
+            $this->lineSelected = '2';
         }
+        
+        $query->andWhere("p.product_line_id = ?", $this->lineSelected);
 
         $this->products = $query->execute();
 

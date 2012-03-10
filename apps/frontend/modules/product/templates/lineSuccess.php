@@ -5,9 +5,6 @@
         <a <?php if ($lineSelected == $productLine->getId()) {
         echo 'class="selected"';
     } ?> href='<?php echo url_for('product/line?id=' . $productLine->getId()) ?>'><?php echo $productLine ?></a>
-    <!--
-    <a href="http://www.lidherma.com/" target="_blank" >Lidherma</a>
-    <a href="http://www.nahrin.com.ar/" target="_blank" >Nahrin</a> -->
 <?php endforeach; ?>
 </div>
 <?php end_slot() ?>
